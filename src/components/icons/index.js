@@ -1,4 +1,3 @@
-export { default as IconAppStore } from './appstore';
 export { default as IconBookmark } from './bookmark';
 export { default as IconBio } from './bio';
 export { default as IconDev } from './dev';
