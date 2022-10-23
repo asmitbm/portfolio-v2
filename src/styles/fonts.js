@@ -7,12 +7,26 @@ import CalibreMediumWoff2 from '@fonts/Calibre/Calibre-Medium.woff2';
 import CalibreSemiboldWoff from '@fonts/Calibre/Calibre-Semibold.woff';
 import CalibreSemiboldWoff2 from '@fonts/Calibre/Calibre-Semibold.woff2';
 
+import GoogleSansRegularWoff from '@fonts/GoogleSans/GoogleSans-Regular.woff';
+import GoogleSansRegularWoff2 from '@fonts/GoogleSans/GoogleSans-Regular.woff2';
+import GoogleSansMediumWoff from '@fonts/GoogleSans/GoogleSans-Medium.woff';
+import GoogleSansMediumWoff2 from '@fonts/GoogleSans/GoogleSans-Medium.woff2';
+import GoogleSansBoldWoff from '@fonts/GoogleSans/GoogleSans-Bold.woff';
+import GoogleSansBoldWoff2 from '@fonts/GoogleSans/GoogleSans-Bold.woff2';
+
 import CalibreRegularItalicWoff from '@fonts/Calibre/Calibre-RegularItalic.woff';
 import CalibreRegularItalicWoff2 from '@fonts/Calibre/Calibre-RegularItalic.woff2';
 import CalibreMediumItalicWoff from '@fonts/Calibre/Calibre-MediumItalic.woff';
 import CalibreMediumItalicWoff2 from '@fonts/Calibre/Calibre-MediumItalic.woff2';
 import CalibreSemiboldItalicWoff from '@fonts/Calibre/Calibre-SemiboldItalic.woff';
 import CalibreSemiboldItalicWoff2 from '@fonts/Calibre/Calibre-SemiboldItalic.woff2';
+
+import GoogleSansItalicWoff from '@fonts/GoogleSans/GoogleSans-Italic.woff';
+import GoogleSansItalicWoff2 from '@fonts/GoogleSans/GoogleSans-Italic.woff2';
+import GoogleSansMediumItalicWoff from '@fonts/GoogleSans/GoogleSans-MediumItalic.woff';
+import GoogleSansMediumItalicWoff2 from '@fonts/GoogleSans/GoogleSans-MediumItalic.woff2';
+import GoogleSansBoldItalicWoff from '@fonts/GoogleSans/GoogleSans-BoldItalic.woff';
+import GoogleSansBoldItalicWoff2 from '@fonts/GoogleSans/GoogleSans-BoldItalic.woff2';
 
 import SFMonoRegularWoff from '@fonts/SFMono/SFMono-Regular.woff';
 import SFMonoRegularWoff2 from '@fonts/SFMono/SFMono-Regular.woff2';
@@ -30,10 +44,22 @@ const calibreNormalWeights = {
   600: [CalibreSemiboldWoff, CalibreSemiboldWoff2],
 };
 
+const googlesansNormalWeights = {
+  400: [GoogleSansRegularWoff, GoogleSansRegularWoff2],
+  500: [GoogleSansMediumWoff, GoogleSansMediumWoff2],
+  600: [GoogleSansBoldWoff, GoogleSansBoldWoff2],
+};
+
 const calibreItalicWeights = {
   400: [CalibreRegularItalicWoff, CalibreRegularItalicWoff2],
   500: [CalibreMediumItalicWoff, CalibreMediumItalicWoff2],
   600: [CalibreSemiboldItalicWoff, CalibreSemiboldItalicWoff2],
+};
+
+const googlesansItalicWeights = {
+  400: [GoogleSansItalicWoff, GoogleSansItalicWoff2],
+  500: [GoogleSansMediumItalicWoff, GoogleSansMediumItalicWoff2],
+  600: [GoogleSansBoldItalicWoff, GoogleSansBoldItalicWoff2],
 };
 
 const sfMonoNormalWeights = {
@@ -50,6 +76,12 @@ const calibre = {
   name: 'Calibre',
   normal: calibreNormalWeights,
   italic: calibreItalicWeights,
+};
+
+const googlesans = {
+  name: 'GoogleSans',
+  normal: googlesansNormalWeights,
+  italic: googlesansItalicWeights,
 };
 
 const sfMono = {
@@ -83,11 +115,14 @@ const createFontFaces = (family, style = 'normal') => {
 const calibreNormal = createFontFaces(calibre);
 const calibreItalic = createFontFaces(calibre, 'italic');
 
+const googlesansNormal = createFontFaces(googlesans);
+const googlesansItalic = createFontFaces(googlesans, 'italic');
+
 const sfMonoNormal = createFontFaces(sfMono);
 const sfMonoItalic = createFontFaces(sfMono, 'italic');
 
 const Fonts = css`
-  ${calibreNormal + calibreItalic + sfMonoNormal + sfMonoItalic}
+  ${googlesansNormal + googlesansItalic + calibreNormal + calibreItalic + sfMonoNormal + sfMonoItalic}
 `;
 
 export default Fonts;
