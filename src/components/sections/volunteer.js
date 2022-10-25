@@ -7,8 +7,9 @@ import { KEY_CODES } from '@utils';
 import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
 
-const StyledJobsSection = styled.section`
+const StyledVolunteerSection = styled.section`
   max-width: 700px;
+  padding: 0;
 
   .inner {
     display: flex;
@@ -164,11 +165,11 @@ const StyledTabPanel = styled.div`
   }
 `;
 
-const Jobs = () => {
+const Volunteer = () => {
   const data = useStaticQuery(graphql`
     query {
-      jobs: allMarkdownRemark(
-        filter: { fileAbsolutePath: { regex: "/content/jobs/" } }
+      volunteer: allMarkdownRemark(
+        filter: { fileAbsolutePath: { regex: "/content/volunteer/" } }
         sort: { fields: [frontmatter___date], order: DESC }
       ) {
         edges {
@@ -187,7 +188,7 @@ const Jobs = () => {
     }
   `);
 
-  const jobsData = data.jobs.edges;
+  const volunteerData = data.volunteer.edges;
 
   const [activeTabId, setActiveTabId] = useState(0);
   const [tabFocus, setTabFocus] = useState(null);
@@ -243,14 +244,13 @@ const Jobs = () => {
   };
 
   return (
-    <StyledJobsSection id="jobs" ref={revealContainer}>
-      <h2 className="numbered-heading">Experience</h2>
-      <h3>Working Experience</h3>
+    <StyledVolunteerSection id="volunteer" ref={revealContainer}>
+      <h3>Volunteering Experience</h3>
 
       <div className="inner">
-        <StyledTabList role="tablist" aria-label="Job tabs" onKeyDown={e => onKeyDown(e)}>
-          {jobsData &&
-            jobsData.map(({ node }, i) => {
+        <StyledTabList role="tablist" aria-label="Volunteer tabs" onKeyDown={e => onKeyDown(e)}>
+          {volunteerData &&
+            volunteerData.map(({ node }, i) => {
               const { company } = node.frontmatter;
               return (
                 <StyledTabButton
@@ -271,8 +271,8 @@ const Jobs = () => {
         </StyledTabList>
 
         <StyledTabPanels>
-          {jobsData &&
-            jobsData.map(({ node }, i) => {
+          {volunteerData &&
+            volunteerData.map(({ node }, i) => {
               const { frontmatter, html } = node;
               const { title, url, company, range } = frontmatter;
 
@@ -304,8 +304,8 @@ const Jobs = () => {
             })}
         </StyledTabPanels>
       </div>
-    </StyledJobsSection>
+    </StyledVolunteerSection>
   );
 };
 
-export default Jobs;
+export default Volunteer;
