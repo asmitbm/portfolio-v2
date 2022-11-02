@@ -3,7 +3,7 @@ date: '2018-05-14'
 title: 'Engineer'
 company: 'Upstatement'
 location: 'Boston, MA'
-range: 'May 2018 - Present'
+range: 'May 2018 - June 2018'
 url: 'https://www.upstatement.com/'
 ---
 

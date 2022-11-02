@@ -1,9 +1,9 @@
 ---
-date: '2017-12-21'
-title: 'UI Engineer Co-op'
-company: 'Apple'
-location: 'Cupertino, CA'
-range: 'July - December 2017'
+date: '2022-05-21'
+title: 'Technical Writer and Developer'
+company: 'SeMI Technologies'
+location: 'Amsterdam, VN'
+range: 'May - Present'
 url: 'https://www.apple.com/music/'
 ---
 
