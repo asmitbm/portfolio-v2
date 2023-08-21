@@ -78,10 +78,6 @@ export const background = {
 }
 
 export const hidenav = {
-    initial: {
-        opacity: 0,
-        y: -75
-    },
     visible: {
         opacity: 1,
         y: 0,

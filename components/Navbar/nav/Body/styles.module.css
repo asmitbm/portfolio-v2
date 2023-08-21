@@ -24,11 +24,24 @@
 
     .navlinks {
         max-width: 1200px;
-        margin-top: 80px;
+        margin-top: 40px;
     }
 
     .navlinks p {
-        font-size: 5vw;
+        font-size: 45px;
         padding-right: 2vw;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .navlinks {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .navlinks p {
+        font-size: 40px;
     }
 }

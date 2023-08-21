@@ -21,7 +21,7 @@
 
 .navbar {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 100%;
     align-items: center;
     padding: 5px 0px;
@@ -33,6 +33,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    padding-left: 8vw;
 }
 
 .brand img {
@@ -45,56 +46,56 @@
     justify-content: center;
     gap: 8px;
     cursor: pointer;
-}
-
-.label {
-    position: relative;
-    display: flex;
-    align-items: center;
-    height: 100%;
-}
-
-.label p:nth-of-type(2) {
-    position: absolute;
-}
-
-.label p:nth-of-type(2) {
-    opacity: 0;
+    padding-right: 8vw;
 }
 
 .burger {
-    width: 25px;
+    width: 30px;
+    height: 35px;
     position: relative;
-    pointer-events: none;
+    cursor: pointer;
 }
 
-.burger::after,
-.burger::before {
-    content: "";
-    height: 1px;
-    width: 100%;
-    background-color: black;
+.burger span {
     position: relative;
+    top: 40%;
+}
+
+.burger span,
+.burger span::before,
+.burger span::after {
     display: block;
-    transition: all 1s cubic-bezier(0.76, 0, 0.24, 1);
+    width: 30px;
+    height: 2px;
+    background-color: #2a2a2a;
+    transition-property: background-color, transform;
+    transition-duration: 0.3s;
 }
 
-.burger::after {
-    top: -4px;
+.burger span::before,
+.burger span::after {
+    position: relative;
+    content: "";
 }
 
-.burger::before {
-    top: 4px;
+.burger span::before {
+    top: -9px;
 }
 
-.burgerActive::after {
-    transform: rotate(45deg);
-    top: -1px;
+.burger span::after {
+    top: 9px;
 }
 
-.burgerActive::before {
-    transform: rotate(-45deg);
-    top: 1px;
+.burgerActive span {
+    background-color: transparent;
+}
+
+.burgerActive span::before {
+    transform: translateY(10px) rotate(45deg);
+}
+
+.burgerActive span::after {
+    transform: translateY(-10px) rotate(-45deg);
 }
 
 @media only screen and (max-width: 600px) {

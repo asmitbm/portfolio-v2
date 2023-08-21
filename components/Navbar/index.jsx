@@ -32,17 +32,13 @@ export default function Navbar() {
     }, [pathname])
 
     return (
-        <motion.nav variants={hidenav} initial="initial" animate={hidden ? "hidden" : "visible"} className={styles.header}>
+        <motion.nav variants={hidenav} animate={hidden ? "hidden" : "visible"} className={styles.header}>
             <div className={styles.navbar}>
                 <div className={styles.brand}>
                     <Link href="/"><Image src="/am.svg" alt="logo" width={70} height={30} /></Link>
                 </div>
                 <div onClick={() => { setIsActive(!isActive) }} className={styles.menu}>
-                    <div className={`${styles.burger} ${isActive ? styles.burgerActive : ""}`}></div>
-                    <div className={styles.label}>
-                        <motion.p variants={opacity} animate={!isActive ? "open" : "closed"}>Menu</motion.p>
-                        <motion.p variants={opacity} animate={isActive ? "open" : "closed"}>Close</motion.p>
-                    </div>
+                    <div className={`${styles.burger} ${isActive ? styles.burgerActive : ""}`}><span></span></div>
                 </div>
             </div>
             <motion.div variants={background} initial="initial" animate={isActive ? "open" : "closed"} className={styles.background}></motion.div>
