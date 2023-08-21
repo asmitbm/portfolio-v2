@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { motion, AnimatePresence, useScroll } from 'framer-motion';
-import { opacity, background, hidenav } from './anim';
+import { background, hidenav } from './anim';
 import Nav from './nav';
 import { usePathname } from 'next/navigation';
 
