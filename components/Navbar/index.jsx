@@ -32,7 +32,7 @@ export default function Navbar() {
     }, [pathname])
 
     return (
-        <motion.nav variants={hidenav} animate={hidden ? "hidden" : "visible"} className={styles.header}>
+        <motion.nav variants={hidenav} animate={hidden ? "hidden" : "visible"} className={styles.nav}>
             <div className={styles.navbar}>
                 <div className={styles.brand}>
                     <Link href="/"><Image src="/am.svg" alt="logo" width={70} height={30} /></Link>

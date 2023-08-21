@@ -1,0 +1,43 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    margin-top: 10vw;
+}
+
+.header_name {
+    display: flex;
+    flex-direction: column;
+}
+
+.header_name h1 {
+    font-size: clamp(3rem, 5vw + 0.9rem, 6rem);
+}
+
+.header_para {
+    display: flex;
+    width: 40%;
+}
+
+.header_para p {
+    font-size: clamp(1rem, 1vw + 0.3rem, 2rem);
+    color: #747474;
+    padding-bottom: 12px;
+}
+
+@media only screen and (max-width: 900px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .header_para {
+        margin-top: 3vw;
+        width: auto;
+    }
+}

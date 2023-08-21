@@ -1,6 +1,7 @@
 import './globals.css'
 import { Inter } from 'next/font/google';
 import Navbar from '@/components/Navbar';
+import Header from '@/components/Header';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,7 +15,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <Navbar />
-        <div><p>compiled client and server successfully in 1308 ms 1032 modules compiled client and server successfully in 1308 ms 1032 modules compiled client and server successfully in 1308 ms 1032 modules compiled client and server successfully in 1308 ms 1032 modules compiled client and server successfully in 1308 ms 1032 modules compiled client and server successfully in 1308 ms 1032 modules compiled client and server successfully in 1308 ms 1032 modules compiled client and server successfully in 1308 ms 1032 modules compiled client and server successfully in 1308 ms 1032 modules compiled client and server successfully in 1308 ms 1032 modules compiled client and server successfully in 1308 ms 1032 modules compiled client and server successfully in 1308 ms 1032 modules compiled client and server successfully in 1308 ms 1032 modules compiled client and server successfully in 1308 ms 1032 modules compiled client and server successfully in 1308 ms 1032 modules compiled client and server successfully in 1308 ms 1032 modules compiled client and server successfully in 1308 ms 1032 modules compiled client and server successfully in 1308 ms 1032 modules compiled client and server successfully in 1308 ms 1032 modules compiled client and server successfully in 1308 ms 1032 modules compiled client and server successfully in 1308 ms 1032 modules compiled client and server successfully in 1308 ms 1032 modules compiled client and server successfully in 1308 ms 1032 modules compiled client and server successfully in 1308 ms 1032 modules compiled client and server successfully in 1308 ms 1032 modules compiled client and server successfully in 1308 ms 1032 modules compiled client and server successfully in 1308 ms 1032 modules compiled client and server successfully in 1308 ms 1032 modules compiled client and server successfully in 1308 ms 1032 modules compiled client and server successfully in 1308 ms 1032 modules compiled client and server successfully in 1308 ms 1032 modules compiled client and server successfully in 1308 ms 1032 modules compiled client and server successfully in 1308 ms 1032 modules compiled client and server successfully in 1308 ms 1032 modules compiled client and server successfully in 1308 ms 1032 modules compiled client and server successfully in 1308 ms 1032 modules compiled client and server successfully in 1308 ms 1032 modules compiled client and server successfully in 1308 ms 1032 modules compiled client and server successfully in 1308 ms 1032 modules compiled client and server successfully in 1308 ms 1032 modules</p></div>
+        <Header />
         {children}
       </body>
     </html>

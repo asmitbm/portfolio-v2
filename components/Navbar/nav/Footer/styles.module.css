@@ -17,7 +17,7 @@
 }
 
 .footer li span {
-    color: #9f9689;
+    color: #737373;
 }
 
 @media only screen and (max-width: 600px) {
@@ -26,5 +26,6 @@
         align-items: center;
         padding: 0;
         padding-bottom: 10px;
+        text-align: center;
     }
 }

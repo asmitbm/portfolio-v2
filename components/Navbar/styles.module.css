@@ -1,8 +1,8 @@
-.header {
+.nav {
     background: #fff;
     position: fixed;
     width: 100%;
-    padding: 5px;
+    padding: 20px 5px 5px 5px;
     z-index: 99;
     top: 0;
     left: 0;
@@ -32,7 +32,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    padding-left: 8vw;
+    margin-left: 8vw;
 }
 
 .brand img {
@@ -45,7 +45,7 @@
     justify-content: center;
     gap: 8px;
     cursor: pointer;
-    padding-right: 8vw;
+    margin-right: 8vw;
 }
 
 .burger {
@@ -98,7 +98,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .header {
+    .nav {
         padding: 10px;
     }
 
