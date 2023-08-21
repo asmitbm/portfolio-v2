@@ -4,7 +4,9 @@
     flex-wrap: wrap;
     font-size: 12px;
     text-transform: uppercase;
-    margin-top: 40px;
+    margin-top: 20px;
+    padding-left: 40px;
+    padding-bottom: 20px;
 }
 
 .footer ul {
@@ -12,19 +14,17 @@
     margin-top: 10px;
     overflow: hidden;
     list-style-type: none;
-    padding: 0;
 }
 
 .footer li span {
     color: #9f9689;
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (max-width: 600px) {
     .footer {
-        justify-content: space-between;
-    }
-
-    .footer ul {
-        width: auto
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        padding-bottom: 10px;
     }
 }

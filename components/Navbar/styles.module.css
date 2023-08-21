@@ -1,9 +1,12 @@
 .header {
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     position: fixed;
     width: 100%;
-    padding: 10px;
+    padding: 5px;
+    z-index: 99;
+    top: 0;
+    left: 0;
 }
 
 .background {
@@ -16,7 +19,7 @@
     top: 100%;
 }
 
-.bar {
+.navbar {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
@@ -94,12 +97,12 @@
     top: 1px;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 600px) {
     .header {
-        padding: 20px;
+        padding: 10px;
     }
 
-    .bar {
+    .navbar {
         font-size: 15px;
     }
 }

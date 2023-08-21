@@ -3,12 +3,27 @@ import styles from './styles.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { opacity, background } from './anim';
+import { motion, AnimatePresence, useScroll } from 'framer-motion';
+import { opacity, background, hidenav } from './anim';
 import Nav from './nav';
 import { usePathname } from 'next/navigation';
 
 export default function Navbar() {
+
+    const { scrollY } = useScroll();
+    const [hidden, setHidden] = useState(false);
+
+    function update() {
+        if (scrollY?.current < scrollY?.prev) {
+            setHidden(false);
+        } else if (scrollY?.current > 100 && scrollY?.current > scrollY?.prev) {
+            setHidden(true);
+        }
+    }
+
+    useEffect(() => {
+        scrollY.onChange(() => update());
+    });
 
     const [isActive, setIsActive] = useState(false);
     const pathname = usePathname();
@@ -17,8 +32,8 @@ export default function Navbar() {
     }, [pathname])
 
     return (
-        <div id="navbar" className={styles.header}>
-            <div className={styles.bar}>
+        <motion.nav variants={hidenav} initial="initial" animate={hidden ? "hidden" : "visible"} className={styles.header}>
+            <div className={styles.navbar}>
                 <div className={styles.brand}>
                     <Link href="/"><Image src="/am.svg" alt="logo" width={70} height={30} /></Link>
                 </div>
@@ -34,6 +49,6 @@ export default function Navbar() {
             <AnimatePresence mode="wait">
                 {isActive && <Nav />}
             </AnimatePresence>
-        </div>
+        </motion.nav>
     )
 }

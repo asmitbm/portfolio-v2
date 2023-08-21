@@ -77,9 +77,19 @@ export const background = {
     }
 }
 
-export const variants = {
-    /** this is the "visible" key and it's correlating styles **/
-    visible: { opacity: 1, y: 0 },
-    /** this is the "hidden" key and it's correlating styles **/
-    hidden: { opacity: 0, y: -25 }
+export const hidenav = {
+    initial: {
+        opacity: 0,
+        y: -75
+    },
+    visible: {
+        opacity: 1,
+        y: 0,
+        transition: { duration: 0.6, ease: [0.76, 0, 0.24, 1] }
+    },
+    hidden: {
+        opacity: 0,
+        y: -25,
+        transition: { duration: 0.6, ease: [0.76, 0, 0.24, 1] }
+    }
 };

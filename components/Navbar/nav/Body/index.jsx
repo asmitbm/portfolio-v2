@@ -23,7 +23,7 @@ export default function Body({ links, selectedLink, setSelectedLink }) {
     }
 
     return (
-        <div className={styles.body}>
+        <div className={styles.navlinks}>
             {
                 links.map((link, index) => {
                     const { title, href, target } = link;
