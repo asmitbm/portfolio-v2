@@ -5,6 +5,8 @@
     align-items: flex-end;
     flex-wrap: wrap;
     margin-top: 10vw;
+    margin-left: 8vw;
+    margin-right: 8vw;
 }
 
 .header_name {

@@ -1,7 +1,5 @@
 .main {
   display: flex;
   flex-direction: column;
-  margin-left: 8vw;
-  margin-right: 8vw;
   min-height: 100vh;
 }
