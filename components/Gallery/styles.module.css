@@ -29,6 +29,7 @@
 
 .gallery .column .imageContainer img {
     object-fit: cover;
+    max-width: 100%;
 }
 
 .gallery .column:nth-of-type(1) {

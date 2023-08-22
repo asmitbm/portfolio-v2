@@ -36,7 +36,11 @@ export default function Gallery() {
     const y4 = useTransform(scrollYProgress, [0, 1], [0, height * 3])
 
     useEffect(() => {
-        const lenis = new Lenis()
+        const lenis = new Lenis({
+            smoothWheel: true,
+            smoothTouch: true,
+            syncTouch: true,
+        });
 
         const raf = (time) => {
             lenis.raf(time)
