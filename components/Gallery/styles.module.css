@@ -13,7 +13,7 @@
     position: relative;
     height: 100%;
     width: 25%;
-    min-width: 250px;
+    max-width: 100vw;
     display: flex;
     flex-direction: column;
     gap: 2vw;
@@ -50,4 +50,103 @@
 
 .spacer {
     height: 100vh;
+}
+
+@media only screen and (max-width: 900px) {
+    .gallery .column {
+        height: 85%;
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .gallery {
+        height: 170vh;
+    }
+
+    .gallery .column {
+        height: 75%;
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .gallery .column {
+        height: 70%;
+        width: 70%;
+    }
+
+    .gallery {
+        height: 150vh;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .gallery {
+        height: 100vh;
+    }
+
+    .gallery .column {
+        height: 80%;
+        width: 80%;
+    }
+
+    .gallery .column {
+        height: 90%;
+        width: 90%;
+    }
+
+    .gallery .column:nth-of-type(1) {
+        top: -100%;
+    }
+
+    .gallery .column:nth-of-type(2) {
+        top: -150%;
+    }
+
+    .gallery .column:nth-of-type(3) {
+        top: -70%;
+    }
+
+    .gallery .column:nth-of-type(4) {
+        top: -190%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .gallery {
+        height: 80vh;
+    }
+
+    .gallery .column {
+        height: 100%;
+        width: 100%;
+    }
+
+    .gallery .column:nth-of-type(1) {
+        top: -100%;
+    }
+
+    .gallery .column:nth-of-type(2) {
+        top: -150%;
+    }
+
+    .gallery .column:nth-of-type(3) {
+        top: -70%;
+    }
+
+    .gallery .column:nth-of-type(4) {
+        top: -190%;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .gallery {
+        height: 70vh;
+    }
+
+    .gallery .column {
+        height: 90%;
+        width: 90%;
+    }
 }
