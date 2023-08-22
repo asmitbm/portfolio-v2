@@ -1,5 +1,5 @@
 .gallery {
-    height: 175vh;
+    height: 110vw;
     background: #2d2d2d;
     position: relative;
     display: flex;
@@ -33,11 +33,11 @@
 }
 
 .gallery .column:nth-of-type(1) {
-    top: -45%;
+    top: -100%;
 }
 
 .gallery .column:nth-of-type(2) {
-    top: -95%;
+    top: -100%;
 }
 
 .gallery .column:nth-of-type(3) {
@@ -60,9 +60,6 @@
 }
 
 @media only screen and (max-width: 700px) {
-    .gallery {
-        height: 170vh;
-    }
 
     .gallery .column {
         height: 75%;
@@ -75,16 +72,9 @@
         height: 70%;
         width: 70%;
     }
-
-    .gallery {
-        height: 150vh;
-    }
 }
 
 @media only screen and (max-width: 450px) {
-    .gallery {
-        height: 100vh;
-    }
 
     .gallery .column {
         height: 80%;
@@ -114,9 +104,6 @@
 }
 
 @media only screen and (max-width: 400px) {
-    .gallery {
-        height: 80vh;
-    }
 
     .gallery .column {
         height: 100%;
@@ -141,9 +128,6 @@
 }
 
 @media only screen and (max-width: 370px) {
-    .gallery {
-        height: 70vh;
-    }
 
     .gallery .column {
         height: 90%;
