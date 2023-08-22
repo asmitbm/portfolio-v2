@@ -1,6 +1,10 @@
 .gallery {
-    height: 110vw;
-    background: #2d2d2d;
+    height: 100vw;
+    background-image: url("../../public/marble.webp");
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
     display: flex;
     gap: 2vw;
@@ -33,7 +37,7 @@
 }
 
 .gallery .column:nth-of-type(1) {
-    top: -100%;
+    top: -70%;
 }
 
 .gallery .column:nth-of-type(2) {
@@ -109,6 +113,18 @@
         height: 100%;
         width: 100%;
     }
+}
+
+@media only screen and (max-width: 370px) {
+
+    .gallery {
+        height: 90vw;
+    }
+
+    .gallery .column {
+        height: 90%;
+        width: 90%;
+    }
 
     .gallery .column:nth-of-type(1) {
         top: -100%;
@@ -124,13 +140,5 @@
 
     .gallery .column:nth-of-type(4) {
         top: -190%;
-    }
-}
-
-@media only screen and (max-width: 370px) {
-
-    .gallery .column {
-        height: 90%;
-        width: 90%;
     }
 }

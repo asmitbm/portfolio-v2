@@ -30,10 +30,10 @@ export default function Gallery() {
         offset: ['start end', 'end start']
     })
     const { height } = dimension;
-    const y = useTransform(scrollYProgress, [0, 1], [0, height * 2])
-    const y2 = useTransform(scrollYProgress, [0, 1], [0, height * 3])
-    const y3 = useTransform(scrollYProgress, [0, 1], [0, height * 1.25])
-    const y4 = useTransform(scrollYProgress, [0, 1], [0, height * 3])
+    const y = useTransform(scrollYProgress, [1, 0], [0, height * 2])
+    const y2 = useTransform(scrollYProgress, [1, 0], [0, height * 3])
+    const y3 = useTransform(scrollYProgress, [1, 0], [0, height * 1.25])
+    const y4 = useTransform(scrollYProgress, [1, 0], [0, height * 3])
 
     useEffect(() => {
         const lenis = new Lenis({
