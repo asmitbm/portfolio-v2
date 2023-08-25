@@ -9,14 +9,20 @@ export default function About() {
             <div className={styles.aboutme_text}>
                 <div className={styles.aboutme_text_heading}>
                     <div className={styles.aboutme_niceto}>
-                        <AnimatedTitle title="Nice to" />
+                        <h1>
+                            <AnimatedTitle title="Nice to" />
+                        </h1>
                     </div>
                     <div className={styles.aboutme_meetyou}>
-                        <AnimatedTitle title="meet you :&#41;" />
+                        <h1>
+                            <AnimatedTitle title="meet you :&#41;" />
+                        </h1>
                     </div>
                 </div>
                 <div className={styles.aboutme_text_line}>
-                    <h4>About Me</h4>
+                    <h4>
+                        <AnimatedTitle title="About Me" />
+                    </h4>
                 </div>
             </div>
             <div className={styles.aboutme_photo}>

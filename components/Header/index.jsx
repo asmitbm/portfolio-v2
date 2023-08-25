@@ -10,10 +10,14 @@ export default function Header() {
             <div id="header" className={styles.header}>
                 <div className={styles.header_name}>
                     <div className={styles.header_hello}>
-                        <AnimatedTitle title="Hello" />
+                        <h1>
+                            <AnimatedTitle title="Hello" />
+                        </h1>
                     </div>
                     <div className={styles.header_asmit}>
-                        <AnimatedTitle title="I'm Asmit." />
+                        <h1>
+                            <AnimatedTitle title="I'm Asmit." />
+                        </h1>
                     </div>
                 </div>
                 <div className={styles.header_para}>
