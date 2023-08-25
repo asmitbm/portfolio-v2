@@ -1,9 +1,44 @@
 "use client";
 import styles from "./styles.module.css";
 import Image from "next/image";
+import { useEffect } from "react";
+import { useAnimation, motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import AnimatedTitle from "../Animations/AnimatedTitle";
 
 export default function About() {
+    const ctrls = useAnimation();
+
+    const { ref, inView } = useInView({
+        threshold: 0.5,
+        triggerOnce: true,
+    });
+
+    useEffect(() => {
+        if (inView) {
+            ctrls.start("visible");
+        }
+        if (!inView) {
+            ctrls.start("hidden");
+        }
+    }, [ctrls, inView]);
+
+    // Animation
+    const imageAnimation = {
+        hidden: {
+            opacity: 0,
+            y: `4em`,
+        },
+        visible: {
+            opacity: 1,
+            y: `0em`,
+            transition: {
+                duration: 1,
+                ease: [0.5, 0.75, 0.4, 0.9],
+            },
+        },
+    };
+
     return (
         <div className={styles.aboutme}>
             <div className={styles.aboutme_text}>
@@ -15,7 +50,7 @@ export default function About() {
                     </div>
                     <div className={styles.aboutme_meetyou}>
                         <h1>
-                            <AnimatedTitle title="meet you :&#41;" />
+                            <AnimatedTitle title="meet you :)" />
                         </h1>
                     </div>
                 </div>
@@ -25,9 +60,15 @@ export default function About() {
                     </h4>
                 </div>
             </div>
-            <div className={styles.aboutme_photo}>
-                <Image src="/dp.webp" alt="aboutme image" fill />
-            </div>
+            <motion.div
+                initial="hidden"
+                ref={ref}
+                animate={ctrls}
+                variants={imageAnimation}
+                className={styles.aboutme_photo}
+            >
+                <Image fill src="/dp.webp" alt="aboutme image" />
+            </motion.div>
         </div>
     );
 }
