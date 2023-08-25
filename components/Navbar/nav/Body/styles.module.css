@@ -21,7 +21,6 @@
 }
 
 @media only screen and (max-width: 1000px) {
-
     .navlinks {
         max-width: 1200px;
         margin-top: 40px;
@@ -34,7 +33,6 @@
 }
 
 @media only screen and (max-width: 600px) {
-
     .navlinks {
         align-items: center;
         justify-content: center;

@@ -64,7 +64,6 @@
 }
 
 @media only screen and (max-width: 700px) {
-
     .gallery .column {
         height: 75%;
         width: 75%;
@@ -79,7 +78,6 @@
 }
 
 @media only screen and (max-width: 450px) {
-
     .gallery .column {
         height: 80%;
         width: 80%;
@@ -108,7 +106,6 @@
 }
 
 @media only screen and (max-width: 400px) {
-
     .gallery .column {
         height: 100%;
         width: 100%;
@@ -116,7 +113,6 @@
 }
 
 @media only screen and (max-width: 370px) {
-
     .gallery {
         height: 90vw;
     }

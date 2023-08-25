@@ -1,5 +1,5 @@
-import styles from './styles.module.css';
-import ScrollText from './ScrollText';
+import styles from "./styles.module.css";
+import ScrollText from "./ScrollText";
 
 export default function Header() {
     return (
@@ -14,10 +14,13 @@ export default function Header() {
                     </div>
                 </div>
                 <div className={styles.header_para}>
-                    <p>An open source enthusiast and a product designer. Available for special projects.</p>
+                    <p>
+                        An open source enthusiast and a product designer.
+                        Available for special projects.
+                    </p>
                 </div>
             </div>
             <ScrollText />
         </div>
-    )
+    );
 }

@@ -1,6 +1,14 @@
 "use client";
-import styles from './styles.module.css';
-import { motion, useScroll, useSpring, useTransform, useMotionValue, useVelocity, useAnimationFrame } from "framer-motion";
+import styles from "./styles.module.css";
+import {
+    motion,
+    useScroll,
+    useSpring,
+    useTransform,
+    useMotionValue,
+    useVelocity,
+    useAnimationFrame,
+} from "framer-motion";
 import { useRef } from "react";
 import { wrap } from "@motionone/utils";
 
@@ -10,10 +18,10 @@ function ParallaxText({ children, baseVelocity = 100 }) {
     const scrollVelocity = useVelocity(scrollY);
     const smoothVelocity = useSpring(scrollVelocity, {
         damping: 50,
-        stiffness: 400
+        stiffness: 400,
     });
     const velocityFactor = useTransform(smoothVelocity, [0, 1000], [0, 5], {
-        clamp: false
+        clamp: false,
     });
 
     const x = useTransform(baseX, (v) => `${wrap(-20, -45, v)}%`);
@@ -49,7 +57,9 @@ function ParallaxText({ children, baseVelocity = 100 }) {
 export default function ScrollText() {
     return (
         <div className={styles.section}>
-            <ParallaxText baseVelocity={-5}>Also, a good photographer maybe?</ParallaxText>
+            <ParallaxText baseVelocity={-5}>
+                Also, a good photographer maybe?
+            </ParallaxText>
         </div>
     );
 }

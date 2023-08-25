@@ -1,9 +1,9 @@
-'use client';
-import { useEffect, useRef, useState } from 'react';
-import styles from './styles.module.css'
-import Image from 'next/image';
-import Lenis from '@studio-freight/lenis'
-import { useTransform, useScroll, motion } from 'framer-motion';
+"use client";
+import { useEffect, useRef, useState } from "react";
+import styles from "./styles.module.css";
+import Image from "next/image";
+import Lenis from "@studio-freight/lenis";
+import { useTransform, useScroll, motion } from "framer-motion";
 
 const images = [
     "1.jpg",
@@ -18,22 +18,21 @@ const images = [
     "10.jpg",
     "11.jpg",
     "12.jpg",
-]
+];
 
 export default function Gallery() {
-
     const gallery = useRef(null);
     const [dimension, setDimension] = useState({ width: 0, height: 0 });
 
     const { scrollYProgress } = useScroll({
         target: gallery,
-        offset: ['start end', 'end start']
-    })
+        offset: ["start end", "end start"],
+    });
     const { height } = dimension;
-    const y = useTransform(scrollYProgress, [1, 0], [0, height * 2])
-    const y2 = useTransform(scrollYProgress, [1, 0], [0, height * 3])
-    const y3 = useTransform(scrollYProgress, [1, 0], [0, height * 1.25])
-    const y4 = useTransform(scrollYProgress, [1, 0], [0, height * 3])
+    const y = useTransform(scrollYProgress, [1, 0], [0, height * 2]);
+    const y2 = useTransform(scrollYProgress, [1, 0], [0, height * 3]);
+    const y3 = useTransform(scrollYProgress, [1, 0], [0, height * 1.25]);
+    const y4 = useTransform(scrollYProgress, [1, 0], [0, height * 3]);
 
     useEffect(() => {
         const lenis = new Lenis({
@@ -43,22 +42,25 @@ export default function Gallery() {
         });
 
         const raf = (time) => {
-            lenis.raf(time)
-            requestAnimationFrame(raf)
-        }
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        };
 
         const resize = () => {
-            setDimension({ width: window.innerWidth, height: window.innerHeight })
-        }
+            setDimension({
+                width: window.innerWidth,
+                height: window.innerHeight,
+            });
+        };
 
-        window.addEventListener("resize", resize)
+        window.addEventListener("resize", resize);
         requestAnimationFrame(raf);
         resize();
 
         return () => {
             window.removeEventListener("resize", resize);
-        }
-    }, [])
+        };
+    }, []);
 
     return (
         <main className={styles.main}>
@@ -70,26 +72,19 @@ export default function Gallery() {
             </div>
             <div className={styles.spacer}></div>
         </main>
-    )
+    );
 }
 
 const Column = ({ images, y }) => {
     return (
-        <motion.div
-            className={styles.column}
-            style={{ y }}
-        >
-            {
-                images.map((src, i) => {
-                    return <div key={i} className={styles.imageContainer}>
-                        <Image
-                            src={`/gallery/${src}`}
-                            alt='image'
-                            fill
-                        />
+        <motion.div className={styles.column} style={{ y }}>
+            {images.map((src, i) => {
+                return (
+                    <div key={i} className={styles.imageContainer}>
+                        <Image src={`/gallery/${src}`} alt="image" fill />
                     </div>
-                })
-            }
+                );
+            })}
         </motion.div>
-    )
-}
+    );
+};

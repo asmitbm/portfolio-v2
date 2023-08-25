@@ -1,6 +1,6 @@
-import styles from './styles.module.css';
-import { translate } from '../../anim';
-import { motion } from 'framer-motion';
+import styles from "./styles.module.css";
+import { translate } from "../../anim";
+import { motion } from "framer-motion";
 
 export default function Footer() {
     return (
@@ -8,12 +8,14 @@ export default function Footer() {
             <ul>
                 <motion.li
                     custom={[0.3, 0]}
-                    variants={translate} initial="initial"
+                    variants={translate}
+                    initial="initial"
                     animate="enter"
-                    exit="exit">
+                    exit="exit"
+                >
                     <span>Made by:</span>Asmit Malakannawar
                 </motion.li>
             </ul>
         </div>
-    )
+    );
 }
