@@ -1,6 +1,7 @@
 .aboutme {
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
     flex-wrap: wrap;
     margin-top: 5vw;
     margin-left: 8vw;
@@ -38,8 +39,11 @@
 }
 
 .aboutme_photo {
-    height: 55vh;
-    width: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    width: 50vh;
     position: relative;
 }
 
@@ -47,4 +51,13 @@
     object-fit: contain;
     height: 100%;
     width: 100%;
+}
+
+@media only screen and (max-width: 750px) {
+    .aboutme {
+        flex-direction: column;
+    }
+    .aboutme_photo {
+        align-self: flex-end;
+    }
 }
