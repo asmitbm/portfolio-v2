@@ -52,10 +52,6 @@
     top: -75%;
 }
 
-.spacer {
-    height: 100vh;
-}
-
 @media only screen and (max-width: 900px) {
     .gallery .column {
         height: 85%;

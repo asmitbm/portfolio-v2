@@ -70,7 +70,6 @@ export default function Gallery() {
                 <Column images={[images[6], images[7], images[8]]} y={y3} />
                 <Column images={[images[9], images[10], images[11]]} y={y4} />
             </div>
-            <div className={styles.spacer}></div>
         </main>
     );
 }
