@@ -40,7 +40,11 @@ export default function About() {
     };
 
     return (
-        <div className={styles.aboutme}>
+        <motion.div
+            whileHover={{ scale: 0.95, transition: { duration: 0.3 } }}
+            whileTap={{ scale: 1.0 }}
+            className={styles.aboutme}
+        >
             <div className={styles.aboutme_text}>
                 <div className={styles.aboutme_text_heading}>
                     <div className={styles.aboutme_niceto}>
@@ -69,6 +73,6 @@ export default function About() {
             >
                 <Image fill src="/dp.webp" alt="aboutme image" />
             </motion.div>
-        </div>
+        </motion.div>
     );
 }
