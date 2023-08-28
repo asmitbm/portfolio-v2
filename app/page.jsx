@@ -3,6 +3,7 @@ import styles from "./page.module.css";
 import Header from "@/components/Header";
 import Gallery from "@/components/Gallery";
 import About from "@/components/About";
+import InfoResume from "@/components/InfoResume";
 import { motion } from "framer-motion";
 
 export default function Home() {
@@ -41,6 +42,7 @@ export default function Home() {
             <Header />
             <Gallery />
             <About />
+            <InfoResume />
         </motion.main>
     );
 }

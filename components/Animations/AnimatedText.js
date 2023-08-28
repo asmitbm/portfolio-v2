@@ -3,8 +3,6 @@ import styled from "styled-components";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-const Text = styled.p``;
-
 const Word = styled(motion.span)`
     display: inline-block;
     margin-right: 0.25em;
@@ -46,7 +44,7 @@ export default function AnimatedText({ content }) {
     };
 
     return (
-        <Text aria-label={content} role="paragraph">
+        <span aria-label={content} role="paragraph">
             {content.split(" ").map((word, index) => {
                 return (
                     <Word
@@ -65,6 +63,6 @@ export default function AnimatedText({ content }) {
                     </Word>
                 );
             })}
-        </Text>
+        </span>
     );
 }
