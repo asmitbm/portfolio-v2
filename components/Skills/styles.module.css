@@ -24,7 +24,7 @@
 }
 
 .skills_text_one p {
-    color: #000000;
+    color: #737373;
     font-size: clamp(2rem, 1vw + 0.5rem, 3rem);
     font-weight: 600;
 }
@@ -66,4 +66,10 @@
     object-fit: contain;
     height: 100%;
     width: 100%;
+}
+
+@media only screen and (max-width: 750px) {
+    .skills_text {
+        flex: 1;
+    }
 }
