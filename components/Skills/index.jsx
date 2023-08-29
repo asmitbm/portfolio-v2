@@ -18,6 +18,70 @@ const images = [
     "css.svg",
 ];
 
+const SkillsLogos = [
+    {
+        title: "Figma",
+        src: "figma.svg",
+        link: "https://www.figma.com/",
+    },
+    {
+        title: "Framer",
+        src: "framer.svg",
+        link: "https://www.framer.com/",
+    },
+    {
+        title: "Canva",
+        src: "canva.svg",
+        link: "https://www.canva.com/",
+    },
+    {
+        title: "Adobe Illustrator",
+        src: "ai.svg",
+        link: "https://www.adobe.com/in/products/illustrator.html",
+    },
+    {
+        title: "JavaScript",
+        src: "javascript.svg",
+        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+    },
+    {
+        title: "Next.js",
+        src: "nextjs.svg",
+        link: "https://nextjs.org/",
+    },
+    {
+        title: "Webflow",
+        src: "webflow.svg",
+        link: "https://webflow.com",
+    },
+    {
+        title: "Tailwind CSS",
+        src: "tailwindcss.svg",
+        link: "https://tailwindcss.com/",
+    },
+    {
+        title: "CSS",
+        src: "css.svg",
+        link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    },
+];
+
+function Logo({ title, src, link }) {
+    return (
+        <div className={styles.container}>
+            <Link href={link}>
+                <Image
+                    src={`/skills/${src}`}
+                    alt={title}
+                    title={title}
+                    role="img"
+                    fill
+                />
+            </Link>
+        </div>
+    );
+}
+
 function LogoAnimation({ children }) {
     const ref = useRef(null);
     const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -72,19 +136,11 @@ export default function Skills() {
             </div>
             <div className={styles.skills_logos}>
                 <div className={styles.logos_container}>
-                    {images.map((src, i) => {
-                        return (
-                            <LogoAnimation>
-                                <div key={i} className={styles.container}>
-                                    <Image
-                                        src={`/skills/${src}`}
-                                        alt="icons"
-                                        fill
-                                    />
-                                </div>
-                            </LogoAnimation>
-                        );
-                    })}
+                    {SkillsLogos.map((props, idx) => (
+                        <LogoAnimation key={idx}>
+                            <Logo key={idx} {...props} />
+                        </LogoAnimation>
+                    ))}
                 </div>
             </div>
         </div>
