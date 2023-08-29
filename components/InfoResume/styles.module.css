@@ -42,10 +42,18 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    background: #f8f8f8;
-    background-image: url("../../public/resume_bg.webp");
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: #e799ff;
+    background-image: radial-gradient(
+            at 21% 13%,
+            hsla(222, 74%, 77%, 1) 0px,
+            transparent 50%
+        ),
+        radial-gradient(at 3% 95%, hsla(253, 76%, 66%, 1) 0px, transparent 50%),
+        radial-gradient(at 69% 86%, hsla(179, 60%, 74%, 1) 0px, transparent 50%),
+        radial-gradient(at 17% 44%, hsla(175, 95%, 63%, 1) 0px, transparent 50%),
+        radial-gradient(at 1% 74%, hsla(151, 62%, 75%, 1) 0px, transparent 50%),
+        radial-gradient(at 38% 23%, hsla(21, 69%, 71%, 1) 0px, transparent 50%),
+        radial-gradient(at 41% 49%, hsla(274, 71%, 63%, 1) 0px, transparent 50%);
     border-radius: 25px;
     flex: 1;
 }
