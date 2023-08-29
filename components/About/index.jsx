@@ -24,7 +24,7 @@ export default function About() {
     }, [ctrls, inView]);
 
     // Animation
-    const imageAnimation = {
+    const AnimationUp = {
         hidden: {
             opacity: 0,
             y: `4em`,
@@ -43,6 +43,10 @@ export default function About() {
         <motion.div
             whileHover={{ scale: 0.95, transition: { duration: 0.3 } }}
             whileTap={{ scale: 1.0 }}
+            initial="hidden"
+            ref={ref}
+            animate={ctrls}
+            variants={AnimationUp}
             className={styles.aboutme}
         >
             <div className={styles.aboutme_text}>
@@ -68,7 +72,7 @@ export default function About() {
                 initial="hidden"
                 ref={ref}
                 animate={ctrls}
-                variants={imageAnimation}
+                variants={AnimationUp}
                 className={styles.aboutme_photo}
             >
                 <Image fill src="/dp.webp" alt="aboutme image" />

@@ -3,20 +3,10 @@ import styles from "./styles.module.css";
 import { useRef, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { useEffect } from "react";
+import { useAnimation, motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import AnimatedText from "@/components/Animations/AnimatedText";
-
-const images = [
-    "figma.svg",
-    "framer.svg",
-    "canva.svg",
-    "ai.svg",
-    "javascript.svg",
-    "nextjs.svg",
-    "webflow.svg",
-    "tailwindcss.svg",
-    "css.svg",
-];
 
 const SkillsLogos = [
     {
@@ -120,8 +110,46 @@ function LogoAnimation({ children }) {
 }
 
 export default function Skills() {
+    const ctrls = useAnimation();
+
+    const { ref, inView } = useInView({
+        threshold: 0.5,
+        triggerOnce: true,
+    });
+
+    useEffect(() => {
+        if (inView) {
+            ctrls.start("visible");
+        }
+        if (!inView) {
+            ctrls.start("hidden");
+        }
+    }, [ctrls, inView]);
+
+    // Animation
+    const AnimationUp = {
+        hidden: {
+            opacity: 0,
+            y: `4em`,
+        },
+        visible: {
+            opacity: 1,
+            y: `0em`,
+            transition: {
+                duration: 1,
+                ease: [0.5, 0.75, 0.4, 0.9],
+            },
+        },
+    };
+
     return (
-        <div className={styles.skills}>
+        <motion.div
+            initial="hidden"
+            ref={ref}
+            animate={ctrls}
+            variants={AnimationUp}
+            className={styles.skills}
+        >
             <div className={styles.skills_text}>
                 <div className={styles.skills_text_one}>
                     <p>
@@ -143,6 +171,6 @@ export default function Skills() {
                     ))}
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 }
