@@ -73,3 +73,9 @@
         flex: 1;
     }
 }
+
+@media only screen and (max-width: 675px) {
+    .logos_container {
+        gap: 10vw;
+    }
+}
