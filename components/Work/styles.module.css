@@ -7,16 +7,9 @@
     margin-right: 8vw;
 }
 
-.project_one {
+.projects_single {
     display: flex;
+    flex-direction: column;
     flex: 1;
-    justify-content: center;
-    align-items: center;
-}
-
-.project_two {
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
+    gap: 1.5vw;
 }

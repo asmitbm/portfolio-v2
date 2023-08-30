@@ -56,8 +56,10 @@ export default function Work() {
 
     return (
         <motion.div className={styles.work}>
-            <div className={styles.project_one}>{ProjectCards[0]}</div>
-            <div className={styles.project_two}>{ProjectCards[1]}</div>
+            <div className={styles.projects_single}>
+                <div>{ProjectCards[0]}</div>
+                <div>{ProjectCards[1]}</div>
+            </div>
         </motion.div>
     );
 }
