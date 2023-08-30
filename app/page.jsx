@@ -5,6 +5,7 @@ import Gallery from "@/components/Gallery";
 import About from "@/components/About";
 import InfoResume from "@/components/InfoResume";
 import Skills from "@/components/Skills";
+import Work from "@/components/Work";
 import { motion } from "framer-motion";
 
 export default function Home() {
@@ -45,6 +46,7 @@ export default function Home() {
             <About />
             <InfoResume />
             <Skills />
+            <Work />
         </motion.main>
     );
 }

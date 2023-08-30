@@ -1,0 +1,22 @@
+.work {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+    margin-top: 1.5vw;
+    margin-left: 8vw;
+    margin-right: 8vw;
+}
+
+.project_one {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.project_two {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}

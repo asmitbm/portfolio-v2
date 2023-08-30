@@ -3,8 +3,25 @@ import styles from "./styles.module.css";
 import { useEffect } from "react";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import ProjectCard from "./ProjectCard";
+import data from "./data.js";
 
 export default function Work() {
+    const ProjectCards = data.projects.map((item, index) => {
+        return (
+            <ProjectCard
+                key={index}
+                title={item.title}
+                src={item.src}
+                description={item.description}
+                period={item.period}
+                link={item.link}
+                color={item.color}
+                bgcolor={item.bgcolor}
+            />
+        );
+    });
+
     const ctrls = useAnimation();
 
     const { ref, inView } = useInView({
@@ -38,14 +55,9 @@ export default function Work() {
     };
 
     return (
-        <motion.div
-            initial="hidden"
-            ref={ref}
-            animate={ctrls}
-            variants={AnimationUp}
-            className={styles.work}
-        >
-            Hi
+        <motion.div className={styles.work}>
+            <div className={styles.project_one}>{ProjectCards[0]}</div>
+            <div className={styles.project_two}>{ProjectCards[1]}</div>
         </motion.div>
     );
 }
