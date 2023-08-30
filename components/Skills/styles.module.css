@@ -15,15 +15,6 @@
     justify-content: flex-end;
     padding: clamp(2rem, 3vw + 0.9rem, 4rem);
     background: #030912;
-    background-image: radial-gradient(
-            at 72.4% 23.6%,
-            #1c021c 0px,
-            transparent 50%
-        ),
-        radial-gradient(at 23.1% 17.7%, #61118c 0px, transparent 50%),
-        radial-gradient(at 88% 76.5%, #3f0680 0px, transparent 50%),
-        radial-gradient(at 32.8% 73.7%, #1527c2 0px, transparent 50%),
-        radial-gradient(at 11.8% 55.8%, #8b00cc 0px, transparent 50%);
     border-radius: 25px;
     flex: 2;
 }
