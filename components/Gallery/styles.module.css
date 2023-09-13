@@ -27,7 +27,7 @@
     height: 100%;
     width: 100%;
     position: relative;
-    border-radius: 1vw;
+    border-radius: 15px;
     overflow: hidden;
 }
 

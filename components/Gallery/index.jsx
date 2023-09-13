@@ -6,8 +6,8 @@ import Lenis from "@studio-freight/lenis";
 import { useTransform, useScroll, motion } from "framer-motion";
 
 const images = [
-    "1.jpg",
-    "2.jpg",
+    "1.webp",
+    "2.webp",
     "3.jpg",
     "4.jpg",
     "5.jpg",
