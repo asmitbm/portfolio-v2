@@ -71,6 +71,8 @@
 @media only screen and (max-width: 750px) {
     .skills_text {
         flex: 1;
+        align-items: center;
+        justify-content: center;
     }
 }
 

@@ -1,12 +1,21 @@
 "use client";
 import styles from "./styles.module.css";
-import { useEffect } from "react";
-import { useAnimation, motion } from "framer-motion";
+import { useEffect, useRef } from "react";
+import { useAnimation, motion, useScroll, useTransform } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import ProjectCard from "./ProjectCard";
 import data from "./data.js";
 
 export default function Work() {
+    const container = useRef(null);
+
+    const { scrollYProgress } = useScroll({
+        target: container,
+        offset: ["start end", "end start"],
+    });
+
+    const height = useTransform(scrollYProgress, [0, 0.8], [100, 0]);
+
     const ProjectCards = data.projects.map((item, index) => {
         return (
             <ProjectCard
@@ -55,11 +64,16 @@ export default function Work() {
     };
 
     return (
-        <motion.div className={styles.work}>
-            <div className={styles.projects_single}>
-                <div>{ProjectCards[0]}</div>
-                <div>{ProjectCards[1]}</div>
-            </div>
-        </motion.div>
+        <div>
+            <motion.div className={styles.work}>
+                <div className={styles.projects_single}>
+                    <div>{ProjectCards[0]}</div>
+                    <div>{ProjectCards[1]}</div>
+                </div>
+            </motion.div>
+            <motion.div style={{ height }} className={styles.circleContainer}>
+                <div className={styles.circle}></div>
+            </motion.div>
+        </div>
     );
 }

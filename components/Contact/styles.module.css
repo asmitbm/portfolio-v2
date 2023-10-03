@@ -1,0 +1,116 @@
+.contact {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #141516;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    padding-top: 8vw;
+    width: 100%;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border-bottom: 1px solid #868686;
+    padding-bottom: 100px;
+    margin-left: 8vw;
+    margin-right: 8vw;
+}
+
+.title h1 {
+    font-size: clamp(3rem, 5vw + 0.9rem, 6rem);
+    font-weight: 600;
+}
+
+.button {
+    display: flex;
+    border-radius: 3em;
+    border: 1px solid #888;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 60px 15px 60px;
+}
+.button a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.button a::after {
+    content: "";
+    width: 0%;
+    height: 1px;
+    background-color: white;
+    display: block;
+    margin-top: 2px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.2s linear;
+}
+
+.button a:hover::after {
+    width: 100%;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    padding-top: 100px;
+    margin-left: 8vw;
+    margin-right: 8vw;
+}
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+    padding: 20px;
+}
+
+.info h3 {
+    color: grey;
+    font-weight: 300;
+    font-size: 1em;
+}
+
+@media only screen and (max-width: 650px) {
+    .nav {
+        justify-content: center;
+    }
+    .button {
+        flex: 1;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .body {
+        padding-top: 20vw;
+    }
+
+    .title {
+        padding-bottom: 50px;
+    }
+
+    .nav {
+        padding-top: 50px;
+    }
+
+    .info {
+        margin-top: 100px;
+    }
+}
