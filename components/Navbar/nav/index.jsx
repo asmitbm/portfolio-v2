@@ -12,8 +12,8 @@ const links = [
         href: "/about",
     },
     {
-        title: "Work",
-        href: "/work",
+        title: "Projects",
+        href: "/projects",
     },
     {
         title: "Blog",
@@ -22,7 +22,7 @@ const links = [
     },
     {
         title: "Contact",
-        href: "#contact",
+        href: "/#contact",
     },
 ];
 

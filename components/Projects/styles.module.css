@@ -1,0 +1,76 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.2em;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects_card {
+    display: flex;
+    flex: 0 1;
+    padding: 0.5rem;
+    border: 1px black solid;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5vw;
+}
+
+.imageWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex: auto;
+    height: 30vw;
+    width: 40vw;
+}
+
+.imageWrapper img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    block-size: auto;
+    border-radius: 15px;
+}
+
+.project_content {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.project_role {
+    color: #6b7280;
+    margin-bottom: 0.25rem;
+}
+
+.project_role p {
+    font-size: clamp(1rem, 0.8vw + 0.3rem, 1.5rem);
+    padding-bottom: 10px;
+}
+
+.project_title h3 a {
+    color: #000000;
+    text-decoration: none;
+    font-size: clamp(1.5rem, 0.8vw + 0.5rem, 2rem);
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 735px) {
+    .projects_card {
+        flex: 1;
+    }
+
+    .imageWrapper {
+        height: 50vw;
+        width: 80vw;
+    }
+}

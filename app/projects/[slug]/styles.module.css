@@ -1,0 +1,146 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vw;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    margin-bottom: 4vw;
+}
+
+.main_nav {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.main_nav a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.main_nav a:hover {
+    text-decoration: underline;
+}
+
+.main_nav h2 {
+    font-size: clamp(1.5rem, 2vw + 0.4rem, 3rem);
+    font-weight: 600;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vw;
+}
+
+.article_heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.article_title {
+    display: flex;
+}
+
+.article_title h1 {
+    font-size: clamp(2rem, 3vw + 0.5rem, 4rem);
+    font-weight: 600;
+}
+
+.article_info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2vw;
+}
+
+.date_role {
+    display: inline-flex;
+    gap: 1vw;
+}
+
+.article_info p {
+    color: #747474;
+}
+
+.imageWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-grow: 1;
+    width: 100%;
+    margin-top: 4vw;
+}
+
+.imageWrapper img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.article_content {
+    display: flex;
+    flex-direction: column;
+}
+
+.work {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3vw;
+}
+
+.work_info {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.title_name {
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid #e5e7eb; /* Equivalent to 'border-l border-gray-200' */
+    position: relative; /* Equivalent to 'relative' */
+    padding-left: 0.75rem;
+    font-size: 15px;
+}
+
+.title_name::before {
+    content: "";
+    top: 0;
+    left: -1px;
+    position: absolute;
+    height: 1.75rem; /* Equivalent to 'h-7' */
+    width: 1px; /* Equivalent to 'w-[1px]' */
+    background-color: #3f3f3f;
+}
+
+.title {
+    display: flex;
+    margin-bottom: 0.8vw;
+}
+
+.title p {
+    color: #747474;
+}
+
+.name {
+    display: flex;
+}
+
+@media only screen and (max-width: 695px) {
+    .work {
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .work_info {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 3vw;
+    }
+}
