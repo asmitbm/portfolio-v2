@@ -43,6 +43,16 @@ var Project = defineDocumentType(() => ({
       type: "string",
       description: "The year of the project",
       required: true
+    },
+    color: {
+      type: "string",
+      description: "The color of the project",
+      required: true
+    },
+    bgcolor: {
+      type: "string",
+      description: "The background color of the project",
+      required: true
     }
   },
   computedFields: {
@@ -59,4 +69,4 @@ var contentlayer_config_default = makeSource({
 export {
   contentlayer_config_default as default
 };
-//# sourceMappingURL=compiled-contentlayer-config-BWCTWV7G.mjs.map
+//# sourceMappingURL=compiled-contentlayer-config-ETAV3356.mjs.map

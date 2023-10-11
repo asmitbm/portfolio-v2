@@ -8,7 +8,7 @@ import { useTransform, useScroll, motion } from "framer-motion";
 const images = [
     "1.webp",
     "2.webp",
-    "3.jpg",
+    "3.webp",
     "4.jpg",
     "5.jpg",
     "6.jpg",

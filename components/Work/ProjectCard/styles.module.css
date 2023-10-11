@@ -6,7 +6,7 @@
 
 .card {
     display: flex;
-    border-radius: 25px;
+    border-radius: 24px;
     text-decoration: none;
     padding-bottom: 10px;
 }
@@ -59,13 +59,14 @@
     position: relative;
     height: 30vw;
     width: 80vw;
+    margin-bottom: clamp(1rem, 2vw + 0.9rem, 3em);
 }
 
 .imageWrapper img {
     object-fit: cover;
     height: 100%;
     width: 100%;
-    border-radius: 15px;
+    border-radius: 16px;
 }
 
 @media only screen and (max-width: 675px) {

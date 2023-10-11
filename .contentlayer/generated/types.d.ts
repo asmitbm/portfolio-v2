@@ -27,6 +27,10 @@ export type Project = {
   role: string
   /** The year of the project */
   year: string
+  /** The color of the project */
+  color: string
+  /** The background color of the project */
+  bgcolor: string
   /** MDX file body */
   body: MDX
   url: string

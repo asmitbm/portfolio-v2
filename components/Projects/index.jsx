@@ -12,7 +12,7 @@ const Items = ({ currentItems }) => {
         <>
             {currentItems &&
                 currentItems.map((project, index) => {
-                    index *= 0.5;
+                    index *= 0.05;
                     return (
                         <motion.div
                             className={styles.projects_card}
@@ -24,6 +24,7 @@ const Items = ({ currentItems }) => {
                             }}
                             viewport={{ once: true }}
                             key={index}
+                            style={{ backgroundColor: `${project.bgcolor}` }}
                         >
                             <div className={styles.card}>
                                 <Link href={project.url}>
@@ -42,7 +43,12 @@ const Items = ({ currentItems }) => {
                                     </span>
                                     <div className={styles.project_title}>
                                         <h3>
-                                            <Link href={project.url}>
+                                            <Link
+                                                style={{
+                                                    color: `${project.color}`,
+                                                }}
+                                                href={project.url}
+                                            >
                                                 {project.title}
                                             </Link>
                                         </h3>

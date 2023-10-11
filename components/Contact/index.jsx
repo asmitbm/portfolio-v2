@@ -25,7 +25,7 @@ export default function Contact() {
                         <AnimatedTitle title="Let's work" />
                     </h1>
                     <h1>
-                        <AnimatedTitle title="Together" />
+                        <AnimatedTitle title="Together." />
                     </h1>
                 </div>
                 <div className={styles.nav}>

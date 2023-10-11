@@ -64,41 +64,34 @@ const ProjectContent = ({ project }) => {
                         src={project.image}
                         width={1065}
                         height={644}
-                        className="object-cover object-top"
                         alt={project.title}
                     />
                 </div>
-                <article className={styles.article_content}>
-                    <div className={styles.work}>
-                        <div className={styles.work_info}>
-                            <div className={styles.title_name}>
-                                <div className={styles.title}>
-                                    <p>Client</p>
-                                </div>
-                                <div className={styles.name}>
-                                    {project.client}
-                                </div>
+                <div className={styles.work}>
+                    <div className={styles.work_info}>
+                        <div className={styles.title_name}>
+                            <div className={styles.title}>
+                                <p>Client</p>
                             </div>
+                            <div className={styles.name}>{project.client}</div>
+                        </div>
 
-                            <div className={styles.title_name}>
-                                <div className={styles.title}>
-                                    <p>Year</p>
-                                </div>
-                                <div className={styles.name}>
-                                    {project.year}
-                                </div>
+                        <div className={styles.title_name}>
+                            <div className={styles.title}>
+                                <p>Year</p>
                             </div>
+                            <div className={styles.name}>{project.year}</div>
+                        </div>
 
-                            <div className={styles.title_name}>
-                                <div className={styles.title}>
-                                    <p>Role</p>
-                                </div>
-                                <div className={styles.name}>
-                                    {project.role}
-                                </div>
+                        <div className={styles.title_name}>
+                            <div className={styles.title}>
+                                <p>Role</p>
                             </div>
+                            <div className={styles.name}>{project.role}</div>
                         </div>
                     </div>
+                </div>
+                <article className="prose prose-sm md:prose-base lg:prose-lg mx-auto">
                     <MDXContent />
                 </article>
             </div>
