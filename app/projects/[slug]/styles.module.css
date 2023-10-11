@@ -5,6 +5,7 @@
     margin-left: 8vw;
     margin-right: 8vw;
     margin-bottom: 4vw;
+    overflow: hidden;
 }
 
 .main_nav {
@@ -92,7 +93,7 @@
     align-items: center;
     justify-content: center;
     margin-top: 3vw;
-    margin-bottom: 3vw;
+    margin-bottom: 3rem;
 }
 
 .work_info {
@@ -104,8 +105,8 @@
 .title_name {
     display: flex;
     flex-direction: column;
-    border-left: 1px solid #e5e7eb; /* Equivalent to 'border-l border-gray-200' */
-    position: relative; /* Equivalent to 'relative' */
+    border-left: 1px solid #e5e7eb;
+    position: relative;
     padding-left: 0.75rem;
     font-size: 15px;
 }
@@ -115,8 +116,8 @@
     top: 0;
     left: -1px;
     position: absolute;
-    height: 1.75rem; /* Equivalent to 'h-7' */
-    width: 1px; /* Equivalent to 'w-[1px]' */
+    height: 1.75rem;
+    width: 1px;
     background-color: #3f3f3f;
 }
 
@@ -131,6 +132,68 @@
 
 .name {
     display: flex;
+}
+
+.more_projects {
+    max-width: 70rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.more_projects h2 {
+    font-size: clamp(1.5rem, 0.4vw + 0.2rem, 2rem);
+    color: #4a5568;
+    font-weight: 600;
+    margin-bottom: 2.5rem;
+}
+
+.post_cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.25rem;
+}
+
+.view_project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.view_project a {
+    transition: all 0.3s ease-in-out;
+    font-size: clamp(1rem, 0.7vw + 0.5rem, 2rem);
+    letter-spacing: 2px;
+    font-weight: bold;
+    background: #f8f8f8;
+    padding: 1rem 1.25rem;
+    color: #141516;
+    border-radius: 15px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.view_project a:hover {
+    background: #141516;
+    color: #f8f8f8;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width: 1024px) {
+    .post_cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .post_cards {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
 }
 
 @media only screen and (max-width: 695px) {

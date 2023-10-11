@@ -91,15 +91,15 @@ const ProjectContent = ({ project }) => {
                         </div>
                     </div>
                 </div>
-                <article className="prose prose-sm md:prose-base lg:prose-lg mx-auto">
+                <article className="prose prose-lg mx-auto">
                     <MDXContent />
                 </article>
             </div>
 
             {/* More Projects*/}
-            <div className="max-w-4xl mx-auto mt-20 lg:mt-32">
-                <h2 className="text-2xl text-gray-700 mb-10">More Projects</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            <div className={styles.more_projects}>
+                <h2>More Projects</h2>
+                <div className={styles.post_cards}>
                     {projects
                         .filter((a) => project.title !== a.title)
                         .map((item, idx) => {
@@ -113,13 +113,8 @@ const ProjectContent = ({ project }) => {
                             );
                         })}
                 </div>
-                <div className="flex justify-center mt-10">
-                    <Link
-                        href="/projects"
-                        className="transition-all duration-300 ease-in-out text-[11.5px] tracking-[2px] font-bold uppercase bg-violet-600 py-4 px-5 text-white hover:bg-white hover:text-violet-600 hover:shadow-2xl"
-                    >
-                        View all projects
-                    </Link>
+                <div className={styles.view_project}>
+                    <Link href="/projects">View All Projects</Link>
                 </div>
             </div>
         </motion.div>

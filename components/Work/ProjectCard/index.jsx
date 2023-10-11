@@ -58,13 +58,13 @@ export default function ProjectCard(props) {
                 target="_blank"
                 href={props.link}
                 className={styles.card}
-                style={{ backgroundColor: `${props.bgcolor};` }}
+                style={{ backgroundColor: `${props.bgcolor}` }}
             >
                 <div className={styles.cardWrapper}>
                     <div className={styles.project_header}>
                         <div className={styles.header}>
                             <div className={styles.title}>
-                                <h2 style={{ color: `${props.color};` }}>
+                                <h2 style={{ color: `${props.color}` }}>
                                     <AnimatedTitle title={props.title} />
                                 </h2>
                             </div>
@@ -78,7 +78,7 @@ export default function ProjectCard(props) {
                             </div>
                         </div>
                         <div className={styles.project_period}>
-                            <p style={{ color: `${props.color};` }}>
+                            <p style={{ color: `${props.color}` }}>
                                 <AnimatedText
                                     className={styles.project_period_text}
                                     content={props.period}

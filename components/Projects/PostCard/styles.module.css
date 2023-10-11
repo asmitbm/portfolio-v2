@@ -1,0 +1,55 @@
+.post_card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.imageWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.image {
+    display: flex;
+    height: 400px;
+    max-width: none !important;
+    transition-duration: 0.3s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+}
+
+.image:hover {
+    transform: scale(1.05);
+}
+
+.image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card_content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem; /* Equivalent to 'py-8' */
+    padding-bottom: 2rem; /* Equivalent to 'py-8' */
+    padding-left: 1rem; /* Equivalent to 'px-2' */
+    padding-right: 1rem;
+}
+
+.card_content p {
+    color: #6b7280;
+    margin-bottom: 0.5rem;
+}
+
+.card_content a {
+    font-size: clamp(1.4rem, 0.4vw + 0.2rem, 2rem);
+    font-weight: 600;
+}

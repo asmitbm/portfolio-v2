@@ -60,10 +60,9 @@
 }
 
 .project_title h3 a {
-    color: #000000;
     text-decoration: none;
-    font-size: clamp(1.5rem, 0.8vw + 0.5rem, 2rem);
-    font-weight: 500;
+    font-size: clamp(1.5rem, 0.5vw + 0.3rem, 3rem);
+    font-weight: 600;
 }
 
 @media only screen and (max-width: 735px) {
