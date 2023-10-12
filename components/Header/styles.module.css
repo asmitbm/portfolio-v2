@@ -1,3 +1,6 @@
+.main {
+    position: relative;
+}
 .header {
     display: flex;
     flex-direction: row;
@@ -7,6 +10,16 @@
     margin-top: 10vw;
     margin-left: 8vw;
     margin-right: 8vw;
+}
+
+.canvas_pointer {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
 }
 
 .header_name {

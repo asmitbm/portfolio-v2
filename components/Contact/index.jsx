@@ -1,7 +1,9 @@
+"use client";
 import styles from "./styles.module.css";
 import { useRef } from "react";
 import { useScroll, motion, useTransform } from "framer-motion";
 import AnimatedTitle from "../Animations/AnimatedTitle";
+import AnimatedText from "../Animations/AnimatedText";
 import Link from "next/link";
 
 export default function Contact() {
@@ -32,32 +34,32 @@ export default function Contact() {
                     <div className={styles.nav}>
                         <div className={styles.button}>
                             <Link href="mailto:asmitbm2952002@gmail.com">
-                                email
+                                <AnimatedText content="email" />
                             </Link>
                         </div>
                         <div className={styles.button}>
                             <Link href="https://www.behance.net/asmitbm">
-                                behance
+                                <AnimatedText content="behance" />
                             </Link>
                         </div>
                         <div className={styles.button}>
                             <Link href="https://github.com/asmitbm">
-                                github
+                                <AnimatedText content="github" />
                             </Link>
                         </div>
                         <div className={styles.button}>
                             <Link href="https://twitter.com/asmitbm">
-                                twitter
+                                <AnimatedText content="twitter" />
                             </Link>
                         </div>
                         <div className={styles.button}>
                             <Link href="https://www.linkedin.com/in/asmitbm/">
-                                linkedin
+                                <AnimatedText content="linkedin" />
                             </Link>
                         </div>
                         <div className={styles.button}>
                             <Link href="mailto:asmitbm2952002@gmail.com">
-                                bio.link
+                                <AnimatedText content="bio.link" />
                             </Link>
                         </div>
                     </div>

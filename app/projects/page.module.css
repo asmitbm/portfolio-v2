@@ -1,3 +1,10 @@
+.background_image {
+    background-image: url("/projects.svg");
+    background-repeat: no-repeat;
+    background-size: 90vw;
+    background-position: 50% 0%;
+}
+
 .main {
     display: flex;
     flex-direction: column;
@@ -6,6 +13,7 @@
     margin-right: 8vw;
     margin-bottom: 4vw;
 }
+
 .header {
     display: flex;
     flex-direction: row;
