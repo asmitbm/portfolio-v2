@@ -1,12 +1,18 @@
 "use client";
+import { useEffect } from "react";
 import styles from "./styles.module.css";
 import ScrollText from "./ScrollText";
 import AnimatedTitle from "../Animations/AnimatedTitle";
 import AnimatedText from "../Animations/AnimatedText";
+import { renderCanvas } from "./renderCanvas";
 
 export default function Header() {
+    useEffect(() => {
+        renderCanvas();
+    }, []);
+
     return (
-        <div>
+        <div className={styles.main}>
             <div id="header" className={styles.header}>
                 <div className={styles.header_name}>
                     <div className={styles.header_hello}>
@@ -28,6 +34,7 @@ export default function Header() {
                 </div>
             </div>
             <ScrollText />
+            <canvas className={styles.canvas_pointer} id="canvas"></canvas>
         </div>
     );
 }
