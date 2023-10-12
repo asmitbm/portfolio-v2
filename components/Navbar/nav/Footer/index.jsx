@@ -13,7 +13,7 @@ export default function Footer() {
                     animate="enter"
                     exit="exit"
                 >
-                    <span>Made by:</span>Asmit Malakannawar
+                    <span>Made by: </span>Asmit Malakannawar
                 </motion.li>
             </ul>
         </div>

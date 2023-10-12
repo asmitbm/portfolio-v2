@@ -30,27 +30,27 @@ export default function Contact() {
                 </div>
                 <div className={styles.nav}>
                     <div className={styles.button}>
-                        <Link href="mailto:asmitbm2952002@gmail.com">Mail</Link>
+                        <Link href="mailto:asmitbm2952002@gmail.com">mail</Link>
                     </div>
                     <div className={styles.button}>
                         <Link href="https://www.behance.net/asmitbm">
-                            Behance
+                            behance
                         </Link>
                     </div>
                     <div className={styles.button}>
-                        <Link href="https://github.com/asmitbm">GitHub</Link>
+                        <Link href="https://github.com/asmitbm">github</Link>
                     </div>
                     <div className={styles.button}>
-                        <Link href="https://twitter.com/asmitbm">Twitter</Link>
+                        <Link href="https://twitter.com/asmitbm">twitter</Link>
                     </div>
                     <div className={styles.button}>
                         <Link href="https://www.linkedin.com/in/asmitbm/">
-                            LinkedIn
+                            linkedIn
                         </Link>
                     </div>
                     <div className={styles.button}>
                         <Link href="mailto:asmitbm2952002@gmail.com">
-                            Bio.link
+                            bio.link
                         </Link>
                     </div>
                 </div>
