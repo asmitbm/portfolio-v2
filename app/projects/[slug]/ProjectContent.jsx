@@ -62,8 +62,8 @@ const ProjectContent = ({ project }) => {
                 <div className={styles.imageWrapper}>
                     <Image
                         src={project.image}
-                        width={1065}
-                        height={644}
+                        width={1920}
+                        height={1080}
                         alt={project.title}
                     />
                 </div>

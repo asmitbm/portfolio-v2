@@ -6,7 +6,7 @@ const projects = [
         period: "Project made during my GSoC'23 program",
         link: "/projects/conda-forge-website-redesign",
         color: "#7C4300",
-        bgcolor: "#FDF6EF",
+        bgcolor: "#FDF9EF",
     },
     {
         title: "ORAS Project",
@@ -19,12 +19,12 @@ const projects = [
     },
     {
         title: "Ubuntu with Spatial UI",
-        src: "/projects/oras.webp",
+        src: "/projects/ubuntuui.webp",
         description: "OS design using Spatial UI",
         period: "Concept Design",
         link: "/projects/ubuntu-spatial-ui-design",
-        color: "#00397C",
-        bgcolor: "#EFF5FD",
+        color: "#7C2D00",
+        bgcolor: "#FDF5EF",
     },
 ];
 
