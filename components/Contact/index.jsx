@@ -20,40 +20,49 @@ export default function Contact() {
             className={styles.contact}
         >
             <div className={styles.body}>
-                <div className={styles.title}>
-                    <h1>
-                        <AnimatedTitle title="Let's work" />
-                    </h1>
-                    <h1>
-                        <AnimatedTitle title="Together." />
-                    </h1>
+                <div className={styles.section}>
+                    <div className={styles.title}>
+                        <h1>
+                            <AnimatedTitle title="Let's Work" />
+                        </h1>
+                        <h1>
+                            <AnimatedTitle title="Together." />
+                        </h1>
+                    </div>
+                    <div className={styles.nav}>
+                        <div className={styles.button}>
+                            <Link href="mailto:asmitbm2952002@gmail.com">
+                                email
+                            </Link>
+                        </div>
+                        <div className={styles.button}>
+                            <Link href="https://www.behance.net/asmitbm">
+                                behance
+                            </Link>
+                        </div>
+                        <div className={styles.button}>
+                            <Link href="https://github.com/asmitbm">
+                                github
+                            </Link>
+                        </div>
+                        <div className={styles.button}>
+                            <Link href="https://twitter.com/asmitbm">
+                                twitter
+                            </Link>
+                        </div>
+                        <div className={styles.button}>
+                            <Link href="https://www.linkedin.com/in/asmitbm/">
+                                linkedin
+                            </Link>
+                        </div>
+                        <div className={styles.button}>
+                            <Link href="mailto:asmitbm2952002@gmail.com">
+                                bio.link
+                            </Link>
+                        </div>
+                    </div>
                 </div>
-                <div className={styles.nav}>
-                    <div className={styles.button}>
-                        <Link href="mailto:asmitbm2952002@gmail.com">mail</Link>
-                    </div>
-                    <div className={styles.button}>
-                        <Link href="https://www.behance.net/asmitbm">
-                            behance
-                        </Link>
-                    </div>
-                    <div className={styles.button}>
-                        <Link href="https://github.com/asmitbm">github</Link>
-                    </div>
-                    <div className={styles.button}>
-                        <Link href="https://twitter.com/asmitbm">twitter</Link>
-                    </div>
-                    <div className={styles.button}>
-                        <Link href="https://www.linkedin.com/in/asmitbm/">
-                            linkedIn
-                        </Link>
-                    </div>
-                    <div className={styles.button}>
-                        <Link href="mailto:asmitbm2952002@gmail.com">
-                            bio.link
-                        </Link>
-                    </div>
-                </div>
+
                 <div className={styles.info}>
                     <div>
                         <h3>Made with ❤️ by Asmit Malakannawar</h3>

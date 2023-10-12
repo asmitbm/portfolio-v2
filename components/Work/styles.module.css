@@ -16,10 +16,10 @@
 
 .circleContainer {
     position: relative;
-    margin-top: 100px;
+    margin-top: 130px;
 }
 .circleContainer .circle {
-    height: 1550%;
+    height: 1500%;
     width: 100%;
     border-radius: 0 0 60% 60%;
     background-color: white;
