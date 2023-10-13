@@ -1,7 +1,7 @@
 .section {
     display: flex;
     flex-direction: column;
-    padding-top: 8vw;
+    padding-top: 5vw;
 }
 
 .parallax {
@@ -13,6 +13,10 @@
     white-space: nowrap;
     display: flex;
     flex-wrap: nowrap;
+}
+
+.scroller {
+    display: flex;
 }
 
 .parallax .scroller {
@@ -28,4 +32,14 @@
 .parallax span {
     display: block;
     margin-right: 30px;
+}
+
+@media only screen and (max-width: 900px) {
+    .section {
+        padding-top: 2vw;
+    }
+    .scroller {
+        align-items: center;
+        justify-content: center;
+    }
 }

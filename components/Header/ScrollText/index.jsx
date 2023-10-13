@@ -58,7 +58,7 @@ export default function ScrollText() {
     return (
         <div className={styles.section}>
             <ParallaxText baseVelocity={-5}>
-                Also, a good photographer maybe?
+                Also, a graphic designer and an icon designer.
             </ParallaxText>
         </div>
     );

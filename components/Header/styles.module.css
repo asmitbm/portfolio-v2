@@ -35,6 +35,7 @@
 .header_para {
     display: flex;
     width: 40%;
+    padding-bottom: 25px;
 }
 
 .header_para p {
@@ -53,5 +54,6 @@
     .header_para {
         margin-top: 3vw;
         width: auto;
+        padding-bottom: 0px;
     }
 }
