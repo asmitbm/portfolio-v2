@@ -48,22 +48,6 @@ export default function Work() {
         }
     }, [ctrls, inView]);
 
-    // Animation
-    const AnimationUp = {
-        hidden: {
-            opacity: 0,
-            y: `4em`,
-        },
-        visible: {
-            opacity: 1,
-            y: `0em`,
-            transition: {
-                duration: 1,
-                ease: [0.5, 0.75, 0.4, 0.9],
-            },
-        },
-    };
-
     return (
         <div>
             <motion.div className={styles.work}>
@@ -72,7 +56,14 @@ export default function Work() {
                     <div>{ProjectCards[1]}</div>
                     <div>{ProjectCards[2]}</div>
                 </div>
-                <motion.div className={styles.more_projects}>
+                <motion.div
+                    whileHover={{
+                        scale: 0.95,
+                        transition: { duration: 0.3 },
+                    }}
+                    whileTap={{ scale: 1.0 }}
+                    className={styles.more_projects}
+                >
                     <Link
                         href="/projects"
                         className={styles.more_projects_button}

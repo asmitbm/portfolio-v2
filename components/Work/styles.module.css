@@ -34,12 +34,6 @@
     width: 100%;
 }
 
-.more_projects a:hover {
-    background: #141516;
-    color: #f8f8f8;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-}
-
 .circleContainer {
     position: relative;
     margin-top: 130px;
