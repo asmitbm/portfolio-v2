@@ -11,13 +11,13 @@ const images = [
     "3.webp",
     "4.webp",
     "5.webp",
-    "6.jpg",
-    "7.jpg",
-    "8.jpg",
-    "9.jpg",
-    "10.jpg",
-    "11.jpg",
-    "12.jpg",
+    "6.webp",
+    "1.webp",
+    "2.webp",
+    "3.webp",
+    "4.webp",
+    "5.webp",
+    "6.webp",
 ];
 
 export default function Gallery() {
