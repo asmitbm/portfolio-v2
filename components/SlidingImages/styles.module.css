@@ -1,0 +1,44 @@
+.slidingImages {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    position: relative;
+    z-index: 1;
+}
+
+.slider {
+    display: flex;
+    position: relative;
+    gap: 2vw;
+    width: 120vw;
+    left: -10vw;
+}
+
+.project {
+    width: 25%;
+    height: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.imageContainer {
+    position: relative;
+    width: 90%;
+    height: 90%;
+}
+
+.imageContainer img {
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+@media only screen and (max-width: 550px) {
+    .project {
+        border-radius: 15px;
+    }
+    .imageContainer img {
+        border-radius: 10px;
+    }
+}
