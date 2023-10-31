@@ -31,6 +31,9 @@ export default function About() {
                         <br />
                         <br />
                         <AnimatedText content="In my spare time, I experiment with designs in Figma. I also help other designers improve their skills by sharing UI & UX related insights. I also love watching new sci-fi shows! Besides that..." />
+                        <br />
+                        <br />
+                        <AnimatedText content="Besides that..." />
                     </p>
                 </div>
             </div>
