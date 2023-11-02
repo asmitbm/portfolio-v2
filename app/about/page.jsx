@@ -30,7 +30,7 @@ export default function About() {
                         <AnimatedText content="Over the years, I found pushing pixels and building information architecture of an app drew my attention other than figuring out the best data structure or the fastest algorithm." />
                         <br />
                         <br />
-                        <AnimatedText content="In my spare time, I experiment with designs in Figma. I also help other designers improve their skills by sharing UI & UX related insights. I also love watching new sci-fi shows! Besides that..." />
+                        <AnimatedText content="In my spare time, I experiment with designs in Figma. I also help other designers improve their skills by sharing UI & UX related insights. I also love watching new sci-fi shows!" />
                         <br />
                         <br />
                         <AnimatedText content="Besides that..." />
@@ -40,7 +40,7 @@ export default function About() {
             <div className={styles.activities}>
                 <div className={styles.activities_content}>
                     <h1>
-                        <AnimatedTitle title="I love speaking at conferences, travelling and photography!" />
+                        <AnimatedTitle title="I love attending conferences, travelling and photography!" />
                     </h1>
                 </div>
                 <div className={styles.sliding_images}>
