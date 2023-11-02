@@ -1,6 +1,7 @@
 "use client";
 import styles from "./styles.module.css";
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect } from "react";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -40,43 +41,47 @@ export default function About() {
     };
 
     return (
-        <motion.div
-            whileHover={{ scale: 0.95, transition: { duration: 0.3 } }}
-            whileTap={{ scale: 1.0 }}
-            initial="hidden"
-            ref={ref}
-            animate={ctrls}
-            variants={AnimationUp}
-            className={styles.aboutme}
-        >
-            <div className={styles.aboutme_text}>
-                <div className={styles.aboutme_text_heading}>
-                    <div className={styles.aboutme_niceto}>
-                        <h1>
-                            <AnimatedTitle title="Nice to" />
-                        </h1>
+        <div>
+            <Link href="/about">
+                <motion.div
+                    whileHover={{ scale: 0.95, transition: { duration: 0.3 } }}
+                    whileTap={{ scale: 1.0 }}
+                    initial="hidden"
+                    ref={ref}
+                    animate={ctrls}
+                    variants={AnimationUp}
+                    className={styles.aboutme}
+                >
+                    <div className={styles.aboutme_text}>
+                        <div className={styles.aboutme_text_heading}>
+                            <div className={styles.aboutme_niceto}>
+                                <h1>
+                                    <AnimatedTitle title="Nice to" />
+                                </h1>
+                            </div>
+                            <div className={styles.aboutme_meetyou}>
+                                <h1>
+                                    <AnimatedTitle title="meet you :)" />
+                                </h1>
+                            </div>
+                        </div>
+                        <div className={styles.aboutme_text_line}>
+                            <h4>
+                                <AnimatedTitle title="About Me" />
+                            </h4>
+                        </div>
                     </div>
-                    <div className={styles.aboutme_meetyou}>
-                        <h1>
-                            <AnimatedTitle title="meet you :)" />
-                        </h1>
-                    </div>
-                </div>
-                <div className={styles.aboutme_text_line}>
-                    <h4>
-                        <AnimatedTitle title="About Me" />
-                    </h4>
-                </div>
-            </div>
-            <motion.div
-                initial="hidden"
-                ref={ref}
-                animate={ctrls}
-                variants={AnimationUp}
-                className={styles.aboutme_photo}
-            >
-                <Image fill src="/dp.webp" alt="aboutme image" />
-            </motion.div>
-        </motion.div>
+                    <motion.div
+                        initial="hidden"
+                        ref={ref}
+                        animate={ctrls}
+                        variants={AnimationUp}
+                        className={styles.aboutme_photo}
+                    >
+                        <Image fill src="/dp.webp" alt="aboutme image" />
+                    </motion.div>
+                </motion.div>
+            </Link>
+        </div>
     );
 }
