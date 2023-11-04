@@ -1,6 +1,7 @@
 import AnimatedTitle from "@/components/Animations/AnimatedTitle";
 import AnimatedText from "@/components/Animations/AnimatedText";
 import SlidingImages from "@/components/SlidingImages";
+import Experience from "@/components/Experience";
 import Image from "next/image";
 import styles from "./page.module.css";
 
@@ -47,6 +48,7 @@ export default function About() {
                     <SlidingImages />
                 </div>
             </div>
+            <Experience />
         </div>
     );
 }
