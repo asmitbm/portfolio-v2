@@ -49,13 +49,14 @@ export default function ExperienceCard(props) {
             className={styles.container}
         >
             <motion.div
-                whileHover={{ scale: 0.95, transition: { duration: 0.3 } }}
-                whileTap={{ scale: 1.0 }}
                 layout
-                transition={{ layout: { duration: 0.8, type: "spring" } }}
+                transition={{ layout: { duration: 1, type: "spring" } }}
                 onClick={() => setIsOpen(!isOpen)}
                 className={styles.card}
-                style={{ borderRadius: "1rem" }}
+                style={{
+                    borderRadius: "1rem",
+                    width: isOpen ? "85vw" : "70vw",
+                }}
             >
                 <div className={styles.work_details}>
                     <div className={styles.title_company}>
@@ -78,10 +79,16 @@ export default function ExperienceCard(props) {
                     <motion.div
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
-                        transition={{ duartion: 0.8 }}
+                        transition={{ duartion: 1 }}
                         className={styles.work}
                     >
-                        <p>{props.work}</p>
+                        <ul className={styles.list}>
+                            {props.work.map((details, index) => (
+                                <li key={index} className={styles.listItem}>
+                                    {details}
+                                </li>
+                            ))}
+                        </ul>
                     </motion.div>
                 )}
             </motion.div>
