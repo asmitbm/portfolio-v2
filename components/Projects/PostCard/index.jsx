@@ -1,21 +1,52 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { useEffect } from "react";
+import { useAnimation, motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import styles from "./styles.module.css";
 
 const PostCard = ({ project, index }) => {
-    index *= 0.05;
+    const ctrls = useAnimation();
+
+    const { ref, inView } = useInView({
+        threshold: 0.5,
+        triggerOnce: true,
+    });
+
+    useEffect(() => {
+        if (inView) {
+            ctrls.start("visible");
+        }
+        if (!inView) {
+            ctrls.start("hidden");
+        }
+    }, [ctrls, inView]);
+
+    // Animation
+    const AnimationUp = {
+        hidden: {
+            opacity: 0,
+            y: `4em`,
+        },
+        visible: {
+            opacity: 1,
+            y: `0em`,
+            transition: {
+                duration: 1,
+                ease: [0.5, 0.75, 0.4, 0.9],
+            },
+        },
+    };
+
     return (
-        <div>
+        <motion.div
+            initial="hidden"
+            ref={ref}
+            animate={ctrls}
+            variants={AnimationUp}
+        >
             <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{
-                    opacity: 1,
-                    y: 0,
-                    transition: { delay: index, duration: 0.3 },
-                }}
-                viewport={{ once: true }}
                 className={styles.post_card}
                 style={{ backgroundColor: `${project.bgcolor}` }}
             >
@@ -42,7 +73,7 @@ const PostCard = ({ project, index }) => {
                     </h3>
                 </div>
             </motion.div>
-        </div>
+        </motion.div>
     );
 };
 

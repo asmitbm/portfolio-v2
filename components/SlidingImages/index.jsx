@@ -57,16 +57,13 @@ export default function SlidingImages() {
             <motion.div style={{ x: x1 }} className={styles.slider}>
                 {slider1.map((project, index) => {
                     return (
-                        <div
-                            key={index}
-                            className={styles.project}
-                            style={{ backgroundColor: project.color }}
-                        >
+                        <div key={index} className={styles.project}>
                             <div className={styles.imageContainer}>
                                 <Image
                                     fill={true}
                                     alt={"image"}
                                     src={`/gallery/${project.src}`}
+                                    style={{ borderRadius: "15px" }}
                                 />
                             </div>
                         </div>
@@ -76,16 +73,13 @@ export default function SlidingImages() {
             <motion.div style={{ x: x2 }} className={styles.slider}>
                 {slider2.map((project, index) => {
                     return (
-                        <div
-                            key={index}
-                            className={styles.project}
-                            style={{ backgroundColor: project.color }}
-                        >
+                        <div key={index} className={styles.project}>
                             <div className={styles.imageContainer}>
                                 <Image
                                     fill={true}
                                     alt={"image"}
                                     src={`/gallery/${project.src}`}
+                                    style={{ borderRadius: "15px" }}
                                 />
                             </div>
                         </div>
