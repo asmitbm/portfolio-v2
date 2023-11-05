@@ -55,7 +55,7 @@ export default function ExperienceCard(props) {
                 className={styles.card}
                 style={{
                     borderRadius: "1rem",
-                    width: isOpen ? "85vw" : "70vw",
+                    width: isOpen ? "85vw" : "72vw",
                 }}
             >
                 <div className={styles.work_details}>
