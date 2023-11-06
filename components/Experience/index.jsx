@@ -15,18 +15,22 @@ export default function Experience() {
                 work={item.work}
                 time={item.time}
                 address={item.address}
+                color={item.color}
+                bgcolor={item.bgcolor}
             />
         );
     });
 
     return (
-        <div className={styles.experience}>
-            <div className={styles.header_name}>
-                <h1>
-                    <AnimatedTitle title="Experience." />
-                </h1>
+        <div className={styles.background_image}>
+            <div className={styles.experience}>
+                <div className={styles.header_name}>
+                    <h1>
+                        <AnimatedTitle title="Experience." />
+                    </h1>
+                </div>
+                <div className={styles.experience_cards}>{ExperienceCards}</div>
             </div>
-            <div className={styles.experience_cards}>{ExperienceCards}</div>
         </div>
     );
 }

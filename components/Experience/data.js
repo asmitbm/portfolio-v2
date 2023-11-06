@@ -9,6 +9,8 @@ const details = [
         companyLink: "https://www.asyncapi.com/",
         time: "06, 2023 - Present",
         address: "Spain (Remote)",
+        color: "#540062",
+        bgcolor: "#FFE3FC",
     },
     {
         position: "UI/UX Mentee",
@@ -22,6 +24,8 @@ const details = [
         companyLink: "https://conda-forge.org/",
         time: "05, 2023 - 09, 2023",
         address: "Germany (Remote)",
+        color: "#7C4300",
+        bgcolor: "#FDF9EF",
     },
     {
         position: "UI/UX Mentor",
@@ -33,6 +37,8 @@ const details = [
         companyLink: "https://oras.land/",
         time: "05, 2023 - 08, 2023",
         address: "California (Remote)",
+        color: "#00397C",
+        bgcolor: "#EFF5FD",
     },
     {
         position: "UI/UX Mentee",
@@ -47,6 +53,8 @@ const details = [
         companyLink: "https://oras.land/",
         time: "03, 2023 - 05, 2023",
         address: "California (Remote)",
+        color: "#00397C",
+        bgcolor: "#EFF5FD",
     },
     {
         position: "Frontend Mentee",
@@ -59,6 +67,8 @@ const details = [
         companyLink: "https://foundation.gnome.org/",
         time: "06, 2022 - 09, 2022",
         address: "California (Remote)",
+        color: "#006D7C",
+        bgcolor: "#EFFCFD",
     },
 ];
 

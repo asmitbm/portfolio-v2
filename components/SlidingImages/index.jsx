@@ -6,39 +6,46 @@ import Image from "next/image";
 
 const slider1 = [
     {
-        color: "#FDEFF3",
         src: "1.webp",
     },
     {
-        color: "#FDF9EF",
-        src: "1.webp",
+        src: "2.webp",
     },
     {
-        color: "#EFF5FD",
-        src: "1.webp",
+        src: "3.webp",
     },
     {
-        color: "#FDF5EF",
-        src: "1.webp",
+        src: "4.webp",
     },
 ];
 
 const slider2 = [
     {
-        color: "#FDEFF3",
-        src: "1.webp",
+        src: "5.webp",
     },
     {
-        color: "#FDF9EF",
-        src: "1.webp",
+        src: "6.webp",
     },
     {
-        color: "#FDF5EF",
-        src: "1.webp",
+        src: "7.webp",
     },
     {
-        color: "#EFF5FD",
-        src: "1.webp",
+        src: "8.webp",
+    },
+];
+
+const slider3 = [
+    {
+        src: "9.webp",
+    },
+    {
+        src: "10.webp",
+    },
+    {
+        src: "11.webp",
+    },
+    {
+        src: "12.webp",
     },
 ];
 
@@ -62,7 +69,7 @@ export default function SlidingImages() {
                                 <Image
                                     fill={true}
                                     alt={"image"}
-                                    src={`/gallery/${project.src}`}
+                                    src={`/sliding_images/${project.src}`}
                                     style={{ borderRadius: "15px" }}
                                 />
                             </div>
@@ -78,7 +85,23 @@ export default function SlidingImages() {
                                 <Image
                                     fill={true}
                                     alt={"image"}
-                                    src={`/gallery/${project.src}`}
+                                    src={`/sliding_images/${project.src}`}
+                                    style={{ borderRadius: "15px" }}
+                                />
+                            </div>
+                        </div>
+                    );
+                })}
+            </motion.div>
+            <motion.div style={{ x: x1 }} className={styles.slider}>
+                {slider3.map((project, index) => {
+                    return (
+                        <div key={index} className={styles.project}>
+                            <div className={styles.imageContainer}>
+                                <Image
+                                    fill={true}
+                                    alt={"image"}
+                                    src={`/sliding_images/${project.src}`}
                                     style={{ borderRadius: "15px" }}
                                 />
                             </div>

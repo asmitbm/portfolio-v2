@@ -56,11 +56,17 @@ export default function ExperienceCard(props) {
                 style={{
                     borderRadius: "1rem",
                     width: isOpen ? "85vw" : "72vw",
+                    backgroundColor: `${props.bgcolor}`,
                 }}
             >
                 <div className={styles.work_details}>
                     <div className={styles.title_company}>
-                        <motion.h2 layout="position">
+                        <motion.h2
+                            style={{
+                                color: `${props.color}`,
+                            }}
+                            layout="position"
+                        >
                             {props.position}
                         </motion.h2>
                         <motion.h3 layout="position">
