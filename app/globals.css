@@ -7,6 +7,13 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+    width: 0; /* Remove scrollbar space */
+    height: 0; /* Optional: just make scrollbar invisible */
 }
 
 body {
