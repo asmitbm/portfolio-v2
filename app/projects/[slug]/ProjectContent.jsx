@@ -35,7 +35,7 @@ const ProjectContent = ({ project }) => {
             className={styles.main}
         >
             <div className={styles.main_nav}>
-                <Link href="/projects">
+                <Link className={styles.underline_hover} href="/projects">
                     <h2>Projects.</h2>
                 </Link>
             </div>
