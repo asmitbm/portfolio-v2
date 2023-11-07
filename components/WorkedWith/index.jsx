@@ -69,7 +69,7 @@ export default function WorkedFor() {
                     </div>
                     <div className={styles.header_para}>
                         <p>
-                            <AnimatedText content="Organizations where I contribute and work with." />
+                            <AnimatedText content="Organizations I contributed to" />
                         </p>
                     </div>
                 </div>
