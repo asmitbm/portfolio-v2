@@ -37,8 +37,8 @@ const details = [
         companyLink: "https://oras.land/",
         time: "05, 2023 - 08, 2023",
         address: "California (Remote)",
-        color: "#00397C",
-        bgcolor: "#EFF5FD",
+        color: "#196200",
+        bgcolor: "#EEFFF5",
     },
     {
         position: "UI/UX Mentee",
