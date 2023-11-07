@@ -18,7 +18,9 @@ export default function Project() {
                         </h1>
                     </div>
                     <div className={styles.header_para}>
-                        <AnimatedText content="All the case studies and concept design work." />
+                        <p>
+                            <AnimatedText content="All the case studies and concept design work." />
+                        </p>
                     </div>
                 </div>
                 <div className={styles.projects}>

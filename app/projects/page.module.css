@@ -42,8 +42,8 @@
 
 .header_para p {
     font-size: clamp(1rem, 1vw + 0.3rem, 2rem);
-    color: #747474;
-    padding-bottom: 12px;
+    font-weight: 500;
+    padding-bottom: 24px;
 }
 
 .projects {

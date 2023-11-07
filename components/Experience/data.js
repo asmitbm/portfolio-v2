@@ -10,7 +10,7 @@ const details = [
         time: "06, 2023 - Present",
         address: "Spain (Remote)",
         color: "#540062",
-        bgcolor: "#FFE3FC",
+        bgcolor: "#FFEEFD",
     },
     {
         position: "UI/UX Mentee",

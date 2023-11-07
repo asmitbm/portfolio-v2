@@ -2,7 +2,7 @@ import AnimatedTitle from "@/components/Animations/AnimatedTitle";
 import AnimatedText from "@/components/Animations/AnimatedText";
 import SlidingImages from "@/components/SlidingImages";
 import Experience from "@/components/Experience";
-import WorkedFor from "@/components/WorkedFor";
+import WorkedWith from "@/components/WorkedWith";
 import Image from "next/image";
 import styles from "./page.module.css";
 
@@ -50,7 +50,7 @@ export default function About() {
                 </div>
             </div>
             <Experience />
-            <WorkedFor />
+            <WorkedWith />
         </div>
     );
 }
