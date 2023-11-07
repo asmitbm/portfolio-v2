@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@floating-ui/react-dom-interactions": "^0.13.3",
     "@motionone/utils": "^10.15.1",
     "@studio-freight/lenis": "^1.0.19",
     "contentlayer": "^0.3.4",
@@ -21,6 +22,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-intersection-observer": "^9.5.2",
+    "react-merge-refs": "^2.1.1",
     "styled-components": "^6.0.7"
   },
   "devDependencies": {
