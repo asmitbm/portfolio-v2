@@ -1,0 +1,102 @@
+.background_image {
+    background-image: url("/workedfor.svg");
+    background-repeat: no-repeat;
+    background-size: 90vw;
+    background-position: 50% 4%;
+}
+.worked_for {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vw;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    margin-bottom: 4vw;
+}
+
+.header_name {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2vw;
+}
+
+.header_name h1 {
+    font-size: clamp(3rem, 5vw + 0.9rem, 6rem);
+    font-weight: 600;
+}
+
+.work_cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.card_container {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 1rem;
+
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    @media (min-width: 1024px) {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    padding-top: 2.5rem; /* Equivalent to 'py-10' */
+    padding-bottom: 2.5rem;
+}
+
+.hover_container {
+    position: relative;
+    display: block;
+    padding: 0.5rem;
+    height: 100%;
+    width: 100%;
+}
+
+.card_background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(45, 55, 72, 0.8);
+    display: block;
+    border-radius: 1.5rem;
+}
+
+.logo_card {
+    display: flex;
+    border-radius: 1rem;
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    overflow: hidden;
+    background-color: aliceblue;
+    border: 1px solid transparent;
+}
+
+.logo_card:hover {
+    border-color: #4a90e2;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 50;
+}
+
+@media only screen and (max-width: 1000px) {
+    .card_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .card_container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
