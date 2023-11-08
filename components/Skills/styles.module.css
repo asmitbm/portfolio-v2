@@ -14,7 +14,11 @@
     align-items: flex-start;
     justify-content: flex-end;
     padding: clamp(2rem, 3vw + 0.9rem, 4rem);
-    background: #030912;
+    background-image: url("../../public/tools.svg");
+    background-color: #000000;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
     border-radius: 25px;
     flex: 2;
 }

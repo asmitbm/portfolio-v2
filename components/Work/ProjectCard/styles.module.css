@@ -42,12 +42,12 @@
 
 .content h3 {
     color: #848484;
-    font-weight: 600;
+    font-weight: 400;
     font-size: clamp(1.2em, 0.2vw + 0.5em, 2em);
 }
 
 .project_period p {
-    font-weight: 500;
+    font-weight: 400;
     font-size: clamp(1.2em, 0.5vw + 0.5em, 2em);
     text-align: right;
 }
