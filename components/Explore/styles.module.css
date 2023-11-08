@@ -55,7 +55,8 @@
 .info_text {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: flex-start;
     padding: clamp(2rem, 3vw + 0.9rem, 4rem);
     background: #f8f8f8;
     background-image: url("../../public/explore.svg");
@@ -64,6 +65,12 @@
     background-size: cover;
     border-radius: 25px;
     flex: 2;
+}
+
+.info_text a {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
 }
 
 .info_text_one {
