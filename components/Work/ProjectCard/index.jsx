@@ -92,7 +92,7 @@ export default function ProjectCard(props) {
                             title={props.title}
                             alt={props.title}
                             src={props.src}
-                            fill
+                            fill={true}
                         />
                     </div>
                 </div>

@@ -78,7 +78,7 @@ export default function About() {
                         variants={AnimationUp}
                         className={styles.aboutme_photo}
                     >
-                        <Image fill src="/dp.webp" alt="aboutme image" />
+                        <Image fill={true} src="/dp.webp" alt="aboutme image" />
                     </motion.div>
                 </motion.div>
             </Link>

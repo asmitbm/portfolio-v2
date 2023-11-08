@@ -3,6 +3,7 @@ import styles from "./styles.module.css";
 import { useEffect, useRef } from "react";
 import { useAnimation, motion, useScroll, useTransform } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import Explore from "@/components/Explore";
 import Link from "next/link";
 import ProjectCard from "./ProjectCard";
 import data from "./data.js";
@@ -56,7 +57,7 @@ export default function Work() {
                     <div>{ProjectCards[1]}</div>
                     <div>{ProjectCards[2]}</div>
                 </div>
-                <motion.div
+                {/*<motion.div
                     whileHover={{
                         scale: 0.95,
                         transition: { duration: 0.3 },
@@ -70,7 +71,10 @@ export default function Work() {
                     >
                         More Projects
                     </Link>
-                </motion.div>
+                </motion.div>*/}
+                <div>
+                    <Explore />
+                </div>
             </motion.div>
             <motion.div style={{ height }} className={styles.circleContainer}>
                 <div className={styles.circle}></div>

@@ -80,7 +80,11 @@ const Column = ({ images, y }) => {
             {images.map((src, i) => {
                 return (
                     <div key={i} className={styles.imageContainer}>
-                        <Image src={`/gallery/${src}`} alt="image" fill />
+                        <Image
+                            src={`/gallery/${src}`}
+                            alt="image"
+                            fill={true}
+                        />
                     </div>
                 );
             })}

@@ -30,7 +30,7 @@
 .skills_text_one p {
     color: #d2d2d2;
     font-size: clamp(2rem, 1vw + 0.5rem, 3rem);
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .skills_text_two {

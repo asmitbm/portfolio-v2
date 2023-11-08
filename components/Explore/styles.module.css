@@ -1,0 +1,106 @@
+.explore {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5vw;
+    flex-wrap: wrap;
+}
+
+.figma {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1d1d1d;
+    background-image: url("../../public/figma_back.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 25px;
+    flex: 1.5;
+}
+
+.figma_link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.figma_image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 16vw;
+    width: 35vw;
+}
+
+.figma_image img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.figma_text {
+    display: flex;
+    padding: clamp(1rem, 2vw + 0.5rem, 2rem);
+    text-align: center;
+}
+
+.figma_text h3 {
+    color: #ffffff;
+    font-size: clamp(1.5rem, 0.5vw + 0.5rem, 2rem);
+    font-weight: 600;
+}
+
+.info_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: clamp(2rem, 3vw + 0.9rem, 4rem);
+    background: #f8f8f8;
+    background-image: url("../../public/explore.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 25px;
+    flex: 2;
+}
+
+.info_text_one {
+    display: flex;
+}
+
+.info_text_one p {
+    color: #737373;
+    font-size: clamp(2rem, 1vw + 0.5rem, 3rem);
+    font-weight: 500;
+}
+
+.info_text_two {
+    display: flex;
+}
+
+.info_text_two p {
+    color: #000000;
+    font-size: clamp(2rem, 3vw + 0.9rem, 4rem);
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 990px) {
+    .explore {
+        flex-direction: column;
+    }
+
+    .figma {
+        flex: 1;
+    }
+
+    .figma_image {
+        width: 70vw;
+        height: 30vw;
+    }
+
+    .info_text {
+        flex: 1;
+    }
+}
