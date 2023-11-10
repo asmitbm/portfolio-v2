@@ -2,7 +2,7 @@
     background-image: url("/workedwith.svg");
     background-repeat: no-repeat;
     background-size: 90vw;
-    background-position: 50% 4%;
+    background-position: 50% 2%;
 }
 .worked_for {
     display: flex;
@@ -51,7 +51,7 @@
     flex-direction: column;
 }
 
-.card_container {
+/*.card_container {
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
     gap: 1rem;
@@ -66,7 +66,7 @@
 
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
-}
+}*/
 
 .hover_container {
     position: relative;
@@ -128,7 +128,21 @@
     object-fit: contain;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 900px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .header_para {
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+        width: auto;
+    }
+}
+
+/*@media only screen and (max-width: 1000px) {
     .card_container {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -138,4 +152,4 @@
     .card_container {
         grid-template-columns: repeat(1, 1fr);
     }
-}
+}*/
