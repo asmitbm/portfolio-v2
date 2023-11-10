@@ -14,7 +14,7 @@ export const generateMetadata = async ({ params }) => {
     return { title: project?.title, excerpt: project?.excerpt };
 };
 
-const ProjectLayout = ({ params }) => {
+export default function ProjectLayout({ params }) {
     const project = allProjects.find(
         (project) => project._raw.flattenedPath === "projects/" + params.slug
     );
@@ -24,6 +24,4 @@ const ProjectLayout = ({ params }) => {
             <ProjectContent project={project} />
         </>
     );
-};
-
-export default ProjectLayout;
+}

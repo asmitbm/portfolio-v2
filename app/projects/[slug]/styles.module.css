@@ -201,6 +201,16 @@
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
+.progress_bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: #141516;
+    transform-origin: 0%;
+}
+
 @media only screen and (max-width: 1024px) {
     .post_cards {
         grid-template-columns: repeat(2, minmax(0, 1fr));

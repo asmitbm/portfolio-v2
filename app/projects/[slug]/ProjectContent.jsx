@@ -3,12 +3,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { allProjects } from "contentlayer/generated";
 import { compareDesc, format, parseISO } from "date-fns";
-import { motion } from "framer-motion";
+import { motion, useScroll, useSpring } from "framer-motion";
 import { getMDXComponent } from "next-contentlayer/hooks";
 import PostCard from "@/components/Projects/PostCard/index.jsx";
 import styles from "./styles.module.css";
 
-const ProjectContent = ({ project }) => {
+export default function ProjectContent({ project }) {
     const projects = allProjects.sort((a, b) =>
         compareDesc(new Date(a.date), new Date(b.date))
     );
@@ -22,6 +22,13 @@ const ProjectContent = ({ project }) => {
     } else {
         MDXContent = getMDXComponent(project.body.code);
     }
+
+    const { scrollYProgress } = useScroll();
+    const scaleX = useSpring(scrollYProgress, {
+        stiffness: 100,
+        damping: 30,
+        restDelta: 0.001,
+    });
 
     return (
         <motion.div
@@ -117,8 +124,7 @@ const ProjectContent = ({ project }) => {
                     <Link href="/projects">View All Projects</Link>
                 </div>
             </div>
+            <motion.div className={styles.progress_bar} style={{ scaleX }} />
         </motion.div>
     );
-};
-
-export default ProjectContent;
+}
