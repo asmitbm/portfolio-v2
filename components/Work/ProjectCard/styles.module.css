@@ -59,7 +59,7 @@
     position: relative;
     height: 30vw;
     width: 80vw;
-    margin-bottom: clamp(1rem, 2vw + 0.9rem, 3em);
+    margin-bottom: clamp(0.5rem, 1vw + 0.5rem, 2em);
 }
 
 .imageWrapper img {
@@ -83,5 +83,12 @@
 
     .header {
         gap: 3vw;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .imageWrapper {
+        height: 40vw;
+        width: 75vw;
     }
 }

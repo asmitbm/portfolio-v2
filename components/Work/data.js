@@ -2,7 +2,7 @@ const projects = [
     {
         title: "conda-forge",
         src: "/projects/condaforge.webp",
-        description: "Landing Page Design and Build",
+        description: "Website redesign focusing on accessibility",
         period: "Project made during my GSoC'23 program",
         link: "/projects/conda-forge-website-redesign",
         color: "#7C4300",
@@ -11,7 +11,7 @@ const projects = [
     {
         title: "ORAS Project",
         src: "/projects/oras.webp",
-        description: "Landing Page Design and Build",
+        description: "Website redesign for a CNCF project",
         period: "Project made during my LFX'23 program",
         link: "/projects/oras-website-redesign",
         color: "#00397C",
