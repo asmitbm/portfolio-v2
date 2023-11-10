@@ -91,7 +91,7 @@ const ProjectContent = ({ project }) => {
                         </div>
                     </div>
                 </div>
-                <article className="prose prose-lg mx-auto">
+                <article className="prose prose-lg mx-auto text-justify">
                     <MDXContent />
                 </article>
             </div>
