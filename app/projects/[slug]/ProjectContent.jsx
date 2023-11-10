@@ -9,6 +9,13 @@ import PostCard from "@/components/Projects/PostCard/index.jsx";
 import styles from "./styles.module.css";
 
 export default function ProjectContent({ project }) {
+    const { scrollYProgress } = useScroll();
+    const scaleX = useSpring(scrollYProgress, {
+        stiffness: 100,
+        damping: 30,
+        restDelta: 0.001,
+    });
+
     const projects = allProjects.sort((a, b) =>
         compareDesc(new Date(a.date), new Date(b.date))
     );
@@ -22,13 +29,6 @@ export default function ProjectContent({ project }) {
     } else {
         MDXContent = getMDXComponent(project.body.code);
     }
-
-    const { scrollYProgress } = useScroll();
-    const scaleX = useSpring(scrollYProgress, {
-        stiffness: 100,
-        damping: 30,
-        restDelta: 0.001,
-    });
 
     return (
         <motion.div
