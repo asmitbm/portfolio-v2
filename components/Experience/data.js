@@ -1,6 +1,6 @@
 const details = [
     {
-        position: "UX Design Mentee",
+        position: "UX Design Intern",
         work: [
             "Developing prototypes and wireframes for intricate JSON components.",
             "Conducting user research to explore methods for visually representing JSON Schema documentation, with the aim of enhancing user comprehension and accessibility. ",
@@ -13,7 +13,7 @@ const details = [
         bgcolor: "#FFEEFD",
     },
     {
-        position: "UI/UX Mentee",
+        position: "UI/UX Intern",
         work: [
             "Designed new UI mockups, and updated the platform.",
             "Developed and implemented a comprehensive design system from scratch, increasing consistency across the organization.",
@@ -41,7 +41,7 @@ const details = [
         bgcolor: "#EEFFF5",
     },
     {
-        position: "UI/UX Mentee",
+        position: "Visual Design Intern",
         work: [
             "Redesigned and deployed a webpage dedicated to ORAS CLI.",
             "Conducted user research studies with maintainers, identifying key pain points and informed product design decisions.",
@@ -57,7 +57,7 @@ const details = [
         bgcolor: "#EFF5FD",
     },
     {
-        position: "Frontend Mentee",
+        position: "Frontend Intern",
         work: [
             "Revamped design of Faces of GNOME, a community platform to show the contributions made by 1000+ GNOME developers.",
             "Designed vector graphics by following HIG guidelines.",
