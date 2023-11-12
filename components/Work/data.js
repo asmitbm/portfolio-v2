@@ -11,9 +11,9 @@ const projects = [
     {
         title: "ORAS Project",
         src: "/projects/oras.webp",
-        description: "Website redesign for a CNCF project",
+        description: "Website design for a CNCF project",
         period: "Project made during my LFX'23 program",
-        link: "/projects/oras-website-redesign",
+        link: "/projects/oras-website",
         color: "#00397C",
         bgcolor: "#EFF5FD",
     },

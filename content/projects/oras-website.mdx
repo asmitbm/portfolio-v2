@@ -1,0 +1,192 @@
+---
+title: "ORAS Project Website"
+type: "Project"
+date: "2023-03-24"
+image: "/projects/oras.webp"
+location: "California (Remote)"
+year: "2023"
+role: "Visual Design Intern"
+client: "ORAS Project"
+color: "#00397C"
+bgcolor: "#EFF5FD"
+---
+
+## Overview
+
+ORAS is the de facto tool for working with OCI Artifacts. ORAS provides CLI and client libraries to distribute artifacts across OCI-compliant registries.
+
+ORAS works similarly to tools you may already be familiar with, such as Docker. It allows you to push (upload) and pull (download) things to and from an OCI Registry, and also handles login (authentication) and token flow (authorization).
+
+The primary objective of this project was to create a website from scratch for the ORAS project. Prior to this, ORAS only had a documentation page, lacking a dedicated website to explain the project's purpose and functionality. The goal of the website was to enhance the user experience for both visitors and contributors.
+
+I was chosen as a LFX Mnetorship 2023 intern for the ORAS project, mentored by [Feynman Zhou](https://twitter.com/FeynmanZhou).
+
+## The Challenge
+
+The challenge at hand involved crafting an entire website for ORAS from the ground up, essentially establishing its online identity. Furthermore, the existing setup lacked search engine optimization (SEO), which is crucial for ensuring visibility and accessibility on the web. Additionally, there was an issue of inconsistent branding, requiring a cohesive and uniform presentation to create a more polished and professional image for ORAS.
+
+## The Process
+
+### Comparative Analysis
+
+As there were no design guidelines available, I began researching the designs of other [CNCF](https://www.cncf.io/) projects. The [CNCF Landscape](https://landscape.cncf.io/) served as a centralized space for all projects, allowing me to explore various landing pages.
+
+![CNCF Landscape](/articles/oras/landscape.webp)
+
+I delved into projects such as [Harbor](https://goharbor.io/), [Dragonfly](https://d7y.io/), [Quay](https://quay.io/), [etcd](https://etcd.io/), [Istio](https://istio.io/), [Kubernetes](https://kubernetes.io/) and many other project websites to examine how CNCF websites are typically designed and to identify the key information to include on the landing page.
+
+![Comparative Analysis](/articles/oras/analysis.webp)
+
+Based on this analysis, I identified the following points:
+
+-   All CNCF websites feature a minimalistic design.
+
+-   Information is promptly presented to users upon landing, either redirecting them to documentation or incorporating a YouTube video about the project.
+
+-   There is an absence of fancy graphics or animations.
+
+-   These projects include architecture diagrams on their landing pages.
+
+-   The websites are designed and presented in an accessible manner, ensuring inclusivity.
+
+### User Interviews
+
+As this project was a recent addition to the CNCF Landscape, there weren't many users yet. To gather insights, I initiated conversations with project maintainers and new contributors who were attempting to contribute to the project.
+
+**These were some of the questions I posed to the users**:
+
+-   What actions can visitors perform on the website?
+
+-   Who is the intended audience?
+
+-   Are there specific brand elements you want to include on your website?
+
+-   How would you describe the contribution process on the old website?
+
+-   What webpages would you like to have on your site?
+
+-   What key pieces of information do you want to include on your site?
+
+-   Would you like any architecture or flow diagrams on the landing page?
+
+**After conducting user interviews this is what I got to know**
+
+-   A minimalistic and easy-to-maintain design is essential.
+
+-   The website should feature pages such as the Home Page, Adopters Page, and a Blog to showcase content.
+
+-   Incorporating a flow diagram on the website could assist new users in gaining a better understanding of the project.
+
+-   A section for community links should be included, allowing people to easily join meetings and the Slack channel.
+
+-   The target audience for this website includes both experienced and new developers.
+
+### Initial Prototype
+
+After studying and talking to users, I quickly drew a rough plan of how the website should look, deciding what information to put on it. I took ideas from other CNCF projects while creating this design.
+
+![Initial Prototype](/articles/oras/old_home.webp)
+
+The issues with this design included inconsistent color usage throughout the website. I selected colors from the ORAS logo and applied them to different sections, resulting in an inconsistent appearance. Additionally, the design lacked accessibility and featured an overwhelming amount of information on the landing page.
+
+However, despite these drawbacks, the design served its purpose by providing maintainers with an idea of how the project could look. It outlined various sections that could be included to enhance the user and contributor experience.
+
+### Style Guide
+
+After talking to the maintainers, we decided on the style guide for the ORAS project.
+
+**Colors**:
+
+![Final color palette](/articles/oras/colors.webp)
+
+I picked a gradient with these shades of blue. It also meets the WCAG accessibility standards with 'AA' and 'AAA' levels on the accessibility scale.
+
+In the context of cloud-native websites, I aimed for an invoking trust, wisdom, and knowledge, which I found in deep blues.
+
+**Typography**:
+
+![Typography](/articles/oras/typography.webp)
+
+**Header Graphic**
+
+As the project is centered around Open Container Initiative (OCI) artifacts, I created a simple graphic by combining cubes in the colors of the ORAS logo. This graphic represents containers and visually communicates how ORAS is a tool for handling OCI Artifacts.
+
+![Cubes](/articles/oras/cubes.webp)
+
+### Designing Different Sections and Pages
+
+**Header**:
+
+For the header, I incorporated the blue gradient and the cubes I had designed earlier. Additionally, I included a 'Get Started' button to direct users to the documentation.
+
+![Header](/articles/oras/header.webp)
+
+**About Section**:
+
+For the About section, I divided it into two parts. Firstly, I included a list of organizations supporting and using ORAS, highlighting their support and contributions. This was essential to garner recognition and users for ORAS by associating with prominent names and diverse projects. Secondly, I added a "What is ORAS?" section, featuring a brief description accompanied by a YouTube video that explains the ORAS project in more detail.
+
+![What is ORAS](/articles/oras/what_is_oras.webp)
+
+**Features Section**:
+
+I designed this section to spotlight the crucial features of the ORAS CLI. This was intended to provide new users with insights into what sets ORAS apart and showcase its capabilities.
+
+![Features of ORAS](/articles/oras/features.webp)
+
+**How ORAS Works Section**:
+
+This section was carefully designed to incorporate an architecture diagram illustrating the workings of ORAS. I created this diagram using Illustrator, aiming for a 3D appearance to enhance visual clarity. Additionally, the section detailed the various libraries supported by ORAS, including Python, Go, and .NET.
+
+![How ORAS works](/articles/oras/how_oras.webp)
+
+**CLI Section**:
+
+As ORAS is a Command Line Interface (CLI) tool, it is compatible with various platforms, including Windows, MacOS, and Linux. The primary objective of this section was to demonstrate how straightforward it is to install and use ORAS. To achieve this, I designed a CLI component with navigable tabs, allowing users to easily select their respective platforms.
+
+![ORAS CLI](/articles/oras/cli.webp)
+
+**Community Links Section**:
+
+ORAS being an open-source project, maintains an active community on Slack. This platform serves as a space where individuals can inquire about the project, seek clarification on any related doubts, and report identified bugs or issues. Providing links to Slack, GitHub, and Twitter is essential, as it encourages more people to actively engage with the project.
+
+Additionally, ORAS conducts bi-weekly meetings every Wednesday. Including a quick link to the calendar aids new users in effortlessly adding the meeting schedule to their calendars and participating in the meetings with ease.
+
+![ORAS Community](/articles/oras/community.webp)
+
+**Adopters Page**
+
+This page comprises a compilation of projects utilizing ORAS and registries known for supporting OCI Artifacts. It includes various companies and software that endorse OCI Artifacts and utilize ORAS. Listing them is crucial as it provides a comprehensive overview of the widespread adoption and diverse applications of ORAS within the industry.
+
+This page was divided in two sections, the projects that use ORAS and registries that support OCI Artifacts.
+
+![Adopters Page](/articles/oras/adopters.webp)
+
+### Final Design
+
+![Final Full Design](/articles/oras/full_page.webp)
+
+**Why was this finalised?**
+
+-   This facilitates a smoother learning curve for new contributors to gain insights into the project.
+
+-   Solidifies the identity of the ORAS project.
+
+-   Adheres to a minimal design philosophy consistent with other CNCF projects.
+
+-   Provides new contributors with an easy understanding of the project through diagrams and straightforward installation instructions.
+
+-   Yields excellent SEO results and ensures an accessible design for all users.
+
+## The Result
+
+Following the deployment of the website, the impact was notable across various dimensions:
+
+-   **Improved User Experience**: Navigating the website became a seamless experience for users, allowing them to effortlessly explore and gain a deeper understanding of the project.
+
+-   **Enhanced Visibility and Reach**: The implementation of SEO strategies resulted in an impressive 80% boost, significantly elevating the project's search engine rankings. This surge in visibility led to its discovery by a broader audience, marking a significant achievement in expanding its reach.
+
+-   **Increased Traffic**: The improved search engine rankings translated into a notable uptick in organic traffic. This not only indicated heightened interest but also contributed to the growth of the user base. The project attracted numerous new contributors, enriching the collaborative spirit.
+
+-   **More Adopters Joining The List**: With the introduction of the Adopters page, the response was swift and positive. Pull requests from various organizations came in, expressing interest in being featured on ORAS Project's website. This demonstrated a growing endorsement and adoption of the project within the community.
+
+**Thanks for reading, until next time!**
