@@ -55,7 +55,6 @@ export default function ProjectCard(props) {
             className={styles.container}
         >
             <Link
-                target="_blank"
                 href={props.link}
                 className={styles.card}
                 style={{ backgroundColor: `${props.bgcolor}` }}
