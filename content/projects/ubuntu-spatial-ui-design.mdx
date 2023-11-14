@@ -11,8 +11,202 @@ color: "#7C2D00"
 bgcolor: "#FDF5EF"
 ---
 
-## The Client
+## Overview
 
-## The Challenge
+Diving into the world of UI and exploring Spatial Design turned out to be way more fun and exciting than I thought. When Apple shared news about their new gadget, Apple Vision Pro, I instantly knew it would change how we experience VR/AR. That's when I got into this cool side project, playing around with Spatial UI.
 
-## The Solution
+Since I'm a regular user of Ubuntu, one day it hit me: what if Ubuntu could work on Apple Vision Pro with Spatial UI? So, I decided to make it happen. I'll be explaining the steps of my design process. It's a blend of learning and doing, turning an idea into a reality!
+
+## Idea and Process
+
+Before immersing myself in the design process, I laid the foundation for this project through extensive reading and study. I delved into Apple's VisionOS guidelines, carefully examined keynotes, tutorial videos, explored other case studies, and analyzed Ubuntu's existing UI.
+
+The main goals of this project is to:
+
+-   Devise an original, user-friendly, recognizable, and engaging experience.
+
+-   Enhance Ubuntu’s current UI by harnessing the potential of spatial design.
+
+-   Conceptualize the implementation of Linux on AR/VR devices.
+
+### Inspiration
+
+I use Ubuntu for my work, so I know how it looks. To start my project, I looked closely at how Ubuntu's interface currently appears. I also grabbed some screenshots from Apple's keynotes to get ideas for VisionOS. This collection served as my moodboard, providing inspiration as I progressed through the design process.
+
+![Moodboard for Ubuntu and Spatial UI](/articles/ubuntu/moodboard.webp)
+
+### Sketching
+
+I utilized [Excalidraw](https://excalidraw.com/) to create my initial sketches. These low-fidelity wireframes played a crucial role in giving me a preliminary idea of the design's appearance. Opting for Ubuntu in Spatial UI presented a unique challenge, as it involved developing a design for an operating system (Ubuntu) within another operating system (VisionOS). This posed an exciting challenge for me.
+
+When sketching, I focused on key screens that users typically engage with while using Ubuntu, such as the Home screen, Settings screen, Software App, and Terminal.
+
+Adhering to the spatial design principles, I ensured that vital information was centered for comfortable viewing. Windows were designed to be highly flexible in size, with their orientation and dimensions adapting to the content.
+
+**Home Screen**:
+
+I began with a basic home screen at the center. I split the home screen into three parts: the main wallpaper screen for all the content, the top panel displaying the current time, activities tab, and a shortcut to quick settings, and the vertical navigation bar containing apps.
+
+![Home Screen Sketch](/articles/ubuntu/home_screen_sketch.webp)
+
+**Navigation Bar**:
+
+Next, I outlined a vertical navigation bar for the main navigation, featuring various icons to facilitate seamless navigation for users on this spatial UI platform. The view can be collapsed or expanded based on the user's input.
+
+![Navigation Bar Sketch](/articles/ubuntu/navbar_sketch.webp)
+
+**Top Bar**:
+
+Following that, I drew the top bar, comprising three elements: Activities, the current time, and battery and WiFi status. It also included a small bar for accessing quick settings.
+
+![Top Bar Sketch](/articles/ubuntu/top_bar_sketch.webp)
+
+**Quick Settings**:
+
+The quick settings box opens when users hover over the tiny bar beneath the battery percentage level. Within this box, users can access settings such as WiFi, Bluetooth, VPN, Apps, and more.
+
+![Quick Settings](/articles/ubuntu/quick_settings_sketch.webp)
+
+**Settings Screen**:
+
+Next, I sketched the settings screen, incorporating all the fundamental options found in the Ubuntu UI. Additionally, I introduced an overlay box, referred to as Sheets in Spatial UI. Sheets function as modal views, positioned at the center of the app. These modals share the same Z position as the parent window, causing the parent window to recede and dim. This design choice enhances the user experience by focusing attention and preventing interaction with the parent view until the sheet is dismissed.
+
+![Settings Screen](/articles/ubuntu/settings_sketch.webp)
+
+![Settings with an overlay screen](/articles/ubuntu/settings_with_overlay.webp)
+
+**Software App**:
+
+The interface remains similar to what we currently have in GNOME Software, but there's an updated navigation bar at the bottom of the window. This allows users to easily switch between various app categories.
+
+![Software app sketch](/articles/ubuntu/software_app_sketch.webp)
+
+**Terminal**:
+
+Lastly, there's the terminal. You can easily use it on VisionOS by connecting an external keyboard or using a virtual one. The terminal is crucial for Linux, so I added a shortcuts tab at the bottom to make things more convenient and boost productivity.
+
+![Terminal sketch](/articles/ubuntu/terminal_sketch.webp)
+
+### Mid-fidelity Designs
+
+After making sketches and learning the basics of Spatial UI, I moved on to making mid-fidelity designs.
+
+**Home Screen**:
+
+I increased the size of the main vertical navigation bar and made all the app icons the same on the home screen.
+
+![Home screen mid-fidelity](/articles/ubuntu/home_mid.webp)
+
+**Home Screen With Extended Navigation Bar**:
+
+Upon an extended gaze over the navigation bar, the expanded navigation bar emerges, displaying the names in front of each app.
+
+![Home with extended navigation bar mid-fidelity](/articles/ubuntu/home_extended_mid.webp)
+
+**Home Screen With Quick Settings**:
+
+Similar to the navigation bar, when a user gazes over the bar beneath the battery level, the quick settings panel opens up.
+
+![Quick settings mid-fidelity](/articles/ubuntu/quick_settings_mid.webp)
+
+**Settings Screen**:
+
+![Settings mid-fidelity](/articles/ubuntu/settings_mid.webp)
+
+**Settings Screen With Overlay**:
+
+![Settings with overlay mid-fidelity](/articles/ubuntu/settings_with_overlay_mid.webp)
+
+**Software App**:
+
+![Software App mid-fidelity](/articles/ubuntu/software_app_mid.webp)
+
+**Terminal**:
+
+![Terminal mid-fidelity](/articles/ubuntu/terminal_mid.webp)
+
+## Final Designs
+
+Glass is a key player in Spatial UI design, dynamically responding to lighting conditions. In contrast to iOS and macOS, Spatial UI doesn't have a fixed light or dark appearance. Instead, it adjusts how things look to fit the environment, smoothly shifting from day to night. This adaptability guarantees that the UI maintains an exceptional look in different scenarios and lighting conditions.
+
+To achieve this, I've opted for two types of backgrounds—one with a bright background depicting daytime and another with a dimmer background portraying evening.
+
+![Two types of backgrounds](/articles/ubuntu/backgrounds.webp)
+
+**Home Screen**:
+
+![Home screen final](/articles/ubuntu/home_final.webp)
+
+**Home Screen With Extended Navigation Bar**:
+
+![Home with extended navigation bar final design](/articles/ubuntu/home_extended_final.webp)
+
+**Home Screen With Quick Settings**:
+
+![Quick settings final design](/articles/ubuntu/quick_settings_final.webp)
+
+**Settings Screen**:
+
+![Settings final design](/articles/ubuntu/settings_final.webp)
+
+**Settings Screen With Overlay**:
+
+Notice how the background dims and recedes, drawing the user's attention to the overlaid window.
+
+![Settings with overlay final design](/articles/ubuntu/settings_with_overlay_final.webp)
+
+**Software App**:
+
+I added a toolbar at the bottom of the software window. It helps you easily browse through different categories of apps. Placed with thoughtful depth, it creates a clear hierarchy for easy access.
+
+![Software App final design](/articles/ubuntu/software_final.webp)
+
+**Terminal**:
+
+In the toolbar, there are two handy shortcuts in the terminal—one for an Integrated Development Environment (IDE) and another to open the default browser. This setup makes productivity a breeze.
+
+![Terminal final design](/articles/ubuntu/terminal_final.webp)
+
+## Design Contemplations
+
+I primarily utilized the [VisionOS Design Library and Templates](https://www.figma.com/community/file/1253443272911187215) for fundamental elements, incorporating custom components or icons sparingly and only when essential. This approach ensures the best user experience and maintains consistency in the overall design.
+
+**Ergonomics**:
+
+Adhering to Spatial UI principles and considering ergonomics, users will primarily interact with their eyes and hands on this platform. I've strategically positioned my designs at the center in front of the user to ensure correct placement of the content. Additionally, recognizing the natural range of motion of the neck, it's generally easier for people to move their heads right and left rather than up and down.
+
+**Soft Edges**:
+
+The main screen has soft edges to blend in nicely with your surroundings, making it feel lighter and more real. It's like looking through a window, giving you a glimpse of what's behind it, such as other apps or people.
+
+![Soft blend windows](/articles/ubuntu/soft_corners.webp)
+
+**Using System Colors and White Text**:
+
+Given the transparent nature of Spatial UI's glass, it adjusts to the color in the background. Similar colorful elements on top of the glass might be challenging to see if the glass color is too alike. Adhering to Spatial UI principles, I've chosen white text and icons to guarantee their clarity and visibility.
+
+**Light, Shadows and Contrast**:
+
+Introducing a light source creates a subtle realism effect, enhancing immersion. The bars and windows feature delicate shadows in the corners, serving as cues to users about the direction of the light source.
+
+Since the UI is made of glass material, Spatial UI principles suggest using a darker glass material alongside lighter materials to establish contrast between different sections of the app, drawing attention to interactive elements.
+
+![Light, Shadows and Contrast](/articles/ubuntu/light_shadows_contrast.webp)
+
+## Figma Community File
+
+[**Ubuntu with Spatial UI**](https://www.figma.com/community/file/1291367662147869270/ubuntu-with-spatial-ui)
+
+For you to explore and play around with this UI. If you intend to implement this UI in a software, please remember to provide proper credits :)
+
+## My Thoughts
+
+I was curious about spatial UI and I decided to explore it and turned my findings into a case study. I learned a lot about spatial design, like paying attention to details such as ergonomics, materials, colors, icons, and text. The focus was on making the user experience better by keeping the design simple and clean.
+
+While the idea of Linux on an AR/VR headset may seem impractical presently, it points towards the direction the future is heading. The purpose of this project was not merely reproducing the current UI on glass material but envisioning how we can elevate user experience in the AR/VR landscape.
+
+If this becomes a reality in the future, users will need time to get used to the new UI since VisionOS relies on eyes, hands, and voice as primary inputs and Linux is known for commands. Spatial UI offers the potential to create minimal designs with a heightened focus on core content and user experience.
+
+This case study isn't striving for perfection but serves as an idea of discovery and learning in this evolving concept. The primary goal is to grasp the principles and understand how these concepts will shape our digital experiences in the future.
+
+**Thanks for reading, until next time!**
