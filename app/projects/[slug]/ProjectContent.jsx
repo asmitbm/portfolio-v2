@@ -98,7 +98,7 @@ export default function ProjectContent({ project }) {
                         </div>
                     </div>
                 </div>
-                <article className="prose prose-lg mx-auto text-justify">
+                <article className="prose prose-lg mx-auto">
                     <MDXContent />
                 </article>
             </div>
