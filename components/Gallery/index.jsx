@@ -16,7 +16,7 @@ const images = [
     "8.webp",
     "9.webp",
     "10.webp",
-    "5.webp",
+    "11.webp",
     "6.webp",
 ];
 
