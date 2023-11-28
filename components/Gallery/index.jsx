@@ -17,7 +17,7 @@ const images = [
     "9.webp",
     "10.webp",
     "11.webp",
-    "6.webp",
+    "12.webp",
 ];
 
 export default function Gallery() {
