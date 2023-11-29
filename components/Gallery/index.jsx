@@ -85,6 +85,7 @@ const Column = ({ images, y }) => {
                             alt="images of all the different artworks"
                             fill={true}
                             priority={true}
+                            quality={60}
                         />
                     </div>
                 );
