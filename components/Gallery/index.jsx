@@ -82,8 +82,9 @@ const Column = ({ images, y }) => {
                     <div key={i} className={styles.imageContainer}>
                         <Image
                             src={`/gallery/${src}`}
-                            alt="image"
+                            alt="images of all the different artworks"
                             fill={true}
+                            priority={true}
                         />
                     </div>
                 );
