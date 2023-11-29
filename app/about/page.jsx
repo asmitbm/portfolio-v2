@@ -29,10 +29,10 @@ export default function About() {
                         <AnimatedText content="My name is Asmit Malakannawar, and I'm a product designer from India. I am currently a student pursuing computer science. So, why product design?" />
                         <br />
                         <br />
-                        <AnimatedText content="Over the years, I found pushing pixels and building information architecture of an app drew my attention other than figuring out the best data structure or the fastest algorithm." />
+                        <AnimatedText content="Over time, I've been drawn to the creative side of things — manipulating pixels and curating the visual language of applications — rather than getting lost in the complexities of finding the optimal data structure or the quickest algorithm." />
                         <br />
                         <br />
-                        <AnimatedText content="In my spare time, I experiment with designs in Figma. I also help other designers improve their skills by sharing UI & UX related insights. I also love watching new sci-fi shows!" />
+                        <AnimatedText content="In my spare time, I experiment with icon and graphic designs in Figma. I help other designers improve their skills by sharing UI & UX related insights. I also love watching new sci-fi shows!" />
                         <br />
                         <br />
                         <AnimatedText content="Besides that..." />
@@ -42,7 +42,7 @@ export default function About() {
             <div className={styles.activities}>
                 <div className={styles.activities_content}>
                     <h1>
-                        <AnimatedTitle title="I love attending conferences, travelling and photography!" />
+                        <AnimatedTitle title="I love attending conferences, meeting people, travelling and photography!" />
                     </h1>
                 </div>
                 <div className={styles.sliding_images}>

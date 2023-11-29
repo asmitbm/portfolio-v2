@@ -27,7 +27,9 @@ export default function Header() {
                     </div>
                 </div>
                 <div className={styles.header_para}>
-                    <AnimatedText content="An open source enthusiast and a product designer. Available for special projects." />
+                    <p>
+                        <AnimatedText content="An open source enthusiast and a product designer. Available for special projects." />
+                    </p>
                 </div>
             </div>
             <ScrollText />

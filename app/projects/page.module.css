@@ -44,6 +44,7 @@
     font-size: clamp(1rem, 1vw + 0.3rem, 2rem);
     font-weight: 500;
     padding-bottom: 24px;
+    color: #747474;
 }
 
 .projects {
