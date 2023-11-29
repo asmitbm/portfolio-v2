@@ -65,7 +65,7 @@ export default function InfoResume() {
                 whileTap={{ scale: 1.0 }}
                 className={styles.resume}
             >
-                <Link href="https://drive.google.com/file/d/1CbSuWlYUhNSIGpRgHlR0fgkZEXVrIQMo/view?usp=sharing">
+                <Link href="https://docs.google.com/document/d/1dmdJ4ZqvmWkcFJ9zyZdMp-sVhWnGI-as/edit?usp=sharing&ouid=107887382879387273851&rtpof=true&sd=true">
                     <div className={styles.resume_text}>
                         <h3>
                             <AnimatedTitle title="See My Resume" />
