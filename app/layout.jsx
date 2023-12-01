@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
     title: "Asmit Malakannawar",
     description:
-        "Welcome to Asmit's digital space! This is where he shares all the cool stuff that he has worked on. Take a look around to see my designs, graphics, and more. Each project has a story, and I'd love to share them with you. Let's explore and get inspired together!",
+        "Welcome to Asmit's digital space! He is a product designer from India. This is where he shares all the cool stuff that he has worked on. Take a look around to see his designs, graphics, and more. Each project has a story, and he would love to share them with you. Let's explore and get inspired together!",
 };
 
 export default function RootLayout({ children }) {
