@@ -1,34 +1,57 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
+  <img alt="Logo" src="https://raw.githubusercontent.com/asmitbm/portfolio-v2/main/public/am.svg" width="100" />
+</div>
+<h1 align="center">
+  <a target="_blank" href="https://asmitbm.me">asmitbm.me</a>
+</h1>
 
-## Getting Started
+<p align="center">
+  The second iteration of <a href="https://asmitbm.me" target="_blank">asmitbm.me</a> built with <a href="https://nextjs.org/" target="_blank">Next.js</a> and hosted with <a href="https://vercel.com" target="_blank">Vercel</a>.
+</p>
 
-First, run the development server:
+<p align="center">
+  Previous iteration(s):
+  <a href="https://github.com/asmitbm/asmitbm.github.io" target="_blank">v1</a>
+</p>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+![portfolio website](./public/readme_cover.png)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Using This Website as Template
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+If you'd like to use this website design for your own portfolio, you're more than welcome to do so. Just remember to provide proper attribution by including a link back to [asmitbm.me](https://asmitbm.me) :)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Installation & Set Up
 
-## Learn More
+### Online Set Up
 
-To learn more about Next.js, take a look at the following resources:
+Contributing is as easy as starting a new workspace:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+[![Open in Gitpod](https://www.gitpod.io/svg/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/asmitbm/portfolio-v2)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Local Set Up
 
-## Deploy on Vercel
+1. Fork and Clone this repo.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. Open the cloned folder in your IDE.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+3. Install dependencies
+
+    ```sh
+    npm install
+    ```
+
+4. Start the development server
+
+    ```sh
+    npm run dev
+    ```
+
+## Building and Running for Production
+
+1. Generate a full static production build
+
+    ```sh
+    npm run build
+    ```
+
+Feel free to raise issues if you find any bugs in the site. You can also create pull requests to add new features.
