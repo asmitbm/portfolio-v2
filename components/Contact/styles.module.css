@@ -69,7 +69,7 @@
     content: "";
     width: 0%;
     height: 1px;
-    background-color: white;
+    background-color: #ffffff;
     display: block;
     margin-top: 2px;
     position: relative;
@@ -93,9 +93,26 @@
 }
 
 .info h3 {
-    color: grey;
+    color: #747474;
     font-weight: 300;
     font-size: 1em;
+}
+
+.info h3::after {
+    content: "";
+    width: 0%;
+    height: 1px;
+    background-color: #717171;
+    display: block;
+    margin-top: 2px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.2s linear;
+}
+
+.info h3:hover::after {
+    width: 100%;
 }
 
 @media only screen and (max-width: 650px) {

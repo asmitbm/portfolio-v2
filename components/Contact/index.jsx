@@ -98,7 +98,12 @@ export default function Contact() {
 
                 <div className={styles.info}>
                     <div>
-                        <h3>Designed & Built by Asmit Malakannawar</h3>
+                        <Link
+                            target="_blank"
+                            href="https://github.com/asmitbm/portfolio-v2"
+                        >
+                            <h3>Designed & Built by Asmit Malakannawar</h3>
+                        </Link>
                     </div>
                 </div>
             </div>
