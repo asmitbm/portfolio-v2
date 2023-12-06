@@ -12,7 +12,6 @@
         "@floating-ui/react-dom-interactions": "^0.13.3",
         "@motionone/utils": "^10.15.1",
         "@studio-freight/lenis": "^1.0.19",
-        "@vercel/og": "^0.5.20",
         "contentlayer": "^0.3.4",
         "date-fns": "^2.30.0",
         "eslint": "8.47.0",
