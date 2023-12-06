@@ -1,6 +1,4 @@
-import { ImageResponse } from "next/server";
-// App router includes @vercel/og.
-// No need to install it.
+import { NextRequest } from "next/server";
 
 export const runtime = "edge";
 
@@ -8,7 +6,7 @@ export async function GET() {
     const imageData = await fetch(new URL("./og.png", import.meta.url)).then(
         (res) => res.arrayBuffer()
     );
-    return new ImageResponse(
+    return new NextRequest(
         (
             <div
                 style={{
