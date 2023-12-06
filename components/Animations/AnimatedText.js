@@ -38,7 +38,7 @@ export default function AnimatedText({ content }) {
             opacity: 1,
             y: `0em`,
             transition: {
-                duration: 0.5,
+                duration: 0.8,
                 ease: [0.5, 0.75, 0.4, 0.9],
             },
         },

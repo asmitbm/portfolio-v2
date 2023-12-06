@@ -47,8 +47,8 @@ export default function AnimatedTitle({ title }) {
             opacity: 1,
             y: `0em`,
             transition: {
-                duration: 0.5,
-                ease: [0.2, 0.65, 0.3, 0.9],
+                duration: 0.8,
+                ease: [0.5, 0.65, 0.3, 0.9],
             },
         },
     };
