@@ -10,7 +10,7 @@ const PostCard = ({ project, index }) => {
     const ctrls = useAnimation();
 
     const { ref, inView } = useInView({
-        threshold: 0.5,
+        threshold: 0.4,
         triggerOnce: true,
     });
 
@@ -33,7 +33,7 @@ const PostCard = ({ project, index }) => {
             opacity: 1,
             y: `0em`,
             transition: {
-                duration: 1,
+                duration: 0.5,
                 ease: [0.5, 0.75, 0.4, 0.9],
             },
         },

@@ -12,7 +12,7 @@ export default function ProjectCard(props) {
     const ctrls = useAnimation();
 
     const { ref, inView } = useInView({
-        threshold: 0.5,
+        threshold: 0.4,
         triggerOnce: true,
     });
 
@@ -35,7 +35,7 @@ export default function ProjectCard(props) {
             opacity: 1,
             y: `0em`,
             transition: {
-                duration: 1,
+                duration: 0.5,
                 ease: [0.5, 0.75, 0.4, 0.9],
             },
         },

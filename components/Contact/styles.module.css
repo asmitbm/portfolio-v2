@@ -50,7 +50,6 @@
 .button {
     display: flex;
     border-radius: 3em;
-    /*border: 1px solid #888;*/
     cursor: pointer;
     display: flex;
     align-items: center;

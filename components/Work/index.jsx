@@ -4,7 +4,6 @@ import { useEffect, useRef } from "react";
 import { useAnimation, motion, useScroll, useTransform } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Explore from "@/components/Explore";
-import Link from "next/link";
 import ProjectCard from "./ProjectCard";
 import data from "./data.js";
 
@@ -36,7 +35,7 @@ export default function Work() {
     const ctrls = useAnimation();
 
     const { ref, inView } = useInView({
-        threshold: 0.5,
+        threshold: 0.4,
         triggerOnce: true,
     });
 
@@ -57,21 +56,6 @@ export default function Work() {
                     <div>{ProjectCards[1]}</div>
                     <div>{ProjectCards[2]}</div>
                 </div>
-                {/*<motion.div
-                    whileHover={{
-                        scale: 0.95,
-                        transition: { duration: 0.3 },
-                    }}
-                    whileTap={{ scale: 1.0 }}
-                    className={styles.more_projects}
-                >
-                    <Link
-                        href="/projects"
-                        className={styles.more_projects_button}
-                    >
-                        More Projects
-                    </Link>
-                </motion.div>*/}
                 <div>
                     <Explore />
                 </div>
