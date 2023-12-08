@@ -15,7 +15,7 @@
     justify-content: flex-end;
     padding: clamp(2rem, 3vw + 0.9rem, 4rem);
     background-image: url("../../public/tools.svg");
-    background-color: #000000;
+    background-color: #222222;
     background-position: right;
     background-repeat: no-repeat;
     background-size: contain;
