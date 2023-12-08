@@ -1,3 +1,5 @@
+"use client";
+import { useEffect } from "react";
 import AnimatedTitle from "@/components/Animations/AnimatedTitle";
 import AnimatedText from "@/components/Animations/AnimatedText";
 import SlidingImages from "@/components/SlidingImages";
@@ -6,13 +8,10 @@ import WorkedWith from "@/components/WorkedWith";
 import Image from "next/image";
 import styles from "./page.module.css";
 
-export const metadata = {
-    title: "About Asmit Malakannawar",
-    description:
-        "Asmit Malakannawar is a product designer from India. He is an open source enthusiast. He's a member of the GNOME Foundation and a part of event organizing committee to help plan events like GUADEC and GNOME Asia. Asmit has been involved in open source programs like Google Summer of Code, Linux Foundation Mentorship program, and Google Season of Docs. Learn more here. ",
-};
-
 export default function About() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <div className={styles.main}>
             <div className={styles.header_container}>
