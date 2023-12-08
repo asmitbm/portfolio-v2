@@ -1,5 +1,3 @@
-"use client";
-import { useEffect } from "react";
 import AnimatedTitle from "@/components/Animations/AnimatedTitle";
 import AnimatedText from "@/components/Animations/AnimatedText";
 import SlidingImages from "@/components/SlidingImages";
@@ -15,9 +13,6 @@ export const metadata = {
 };
 
 export default function About() {
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
     return (
         <div className={styles.main}>
             <div className={styles.header_container}>

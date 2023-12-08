@@ -1,5 +1,3 @@
-"use client";
-import { useEffect } from "react";
 import Projects from "@/components/Projects";
 import AnimatedTitle from "@/components/Animations/AnimatedTitle";
 import AnimatedText from "@/components/Animations/AnimatedText";
@@ -12,9 +10,6 @@ export const metadata = {
 };
 
 export default function Project() {
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
     return (
         <div className={styles.background_image}>
             <div className={styles.main}>
