@@ -1,7 +1,7 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
 import Navbar from "@/components/Navbar";
-import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
             <body className={inter.className}>
                 <Navbar />
                 {children}
-                <Contact />
+                <Footer />
                 <Script
                     strategy="afterInteractive"
                     src="https://www.googletagmanager.com/gtag/js?id=G-MD828K0DZ2"

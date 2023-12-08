@@ -1,0 +1,147 @@
+.contact {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #141516;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    padding-top: 8vw;
+    width: 100%;
+}
+
+.section {
+    display: flex;
+    flex-direction: row;
+    margin-left: 8vw;
+    margin-right: 8vw;
+}
+
+.title {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    /*border-bottom: 1px solid #868686;*/
+    /*padding-bottom: 100px;*/
+}
+
+.title h1 {
+    font-size: clamp(3rem, 5vw + 0.9rem, 6rem);
+    font-weight: 600;
+}
+
+.nav {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    /*gap: 20px;*/
+    /*padding-top: 100px;*/
+}
+
+.button {
+    display: flex;
+    border-radius: 3em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    width: 50%;
+}
+.button a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.button a::after {
+    content: "";
+    width: 0%;
+    height: 1px;
+    background-color: #ffffff;
+    display: block;
+    margin-top: 2px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.2s linear;
+}
+
+.button a:hover::after {
+    width: 100%;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 130px;
+    padding: 20px;
+}
+
+.info h3 {
+    color: #747474;
+    font-weight: 300;
+    font-size: 1em;
+}
+
+.info h3::after {
+    content: "";
+    width: 0%;
+    height: 1px;
+    background-color: #717171;
+    display: block;
+    margin-top: 2px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.2s linear;
+}
+
+.info h3:hover::after {
+    width: 100%;
+}
+
+@media only screen and (max-width: 650px) {
+    .section {
+        flex-direction: column;
+    }
+    .title {
+        padding-bottom: 100px;
+        align-items: center;
+    }
+    .button {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .body {
+        padding-top: 20vw;
+    }
+
+    .title {
+        padding-bottom: 50px;
+    }
+
+    .nav {
+        padding-top: 50px;
+    }
+
+    .info {
+        margin-top: 100px;
+    }
+}

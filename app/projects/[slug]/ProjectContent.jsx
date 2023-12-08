@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect } from "react";
 import { allProjects } from "contentlayer/generated";
 import { compareDesc, format, parseISO } from "date-fns";
 import { motion, useScroll, useSpring } from "framer-motion";
@@ -9,6 +10,10 @@ import PostCard from "@/components/Projects/PostCard/index.jsx";
 import styles from "./styles.module.css";
 
 export default function ProjectContent({ project }) {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     const { scrollYProgress } = useScroll();
     const scaleX = useSpring(scrollYProgress, {
         stiffness: 100,
