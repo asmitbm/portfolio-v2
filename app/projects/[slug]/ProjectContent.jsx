@@ -78,9 +78,18 @@ export default function ProjectContent({ project }) {
                     <div className={styles.work_info}>
                         <div className={styles.title_name}>
                             <div className={styles.title}>
-                                <p>Client</p>
+                                <p>For</p>
                             </div>
-                            <div className={styles.name}>{project.client}</div>
+                            <div className={styles.name}>{project.for}</div>
+                        </div>
+
+                        <div className={styles.title_name}>
+                            <div className={styles.title}>
+                                <p>Timeline</p>
+                            </div>
+                            <div className={styles.name}>
+                                {project.timeline}
+                            </div>
                         </div>
 
                         <div className={styles.title_name}>

@@ -29,9 +29,14 @@ const Project = defineDocumentType(() => ({
             description: "The feature image of the project",
             required: true,
         },
-        client: {
+        for: {
             type: "string",
             description: "The client of the project",
+            required: true,
+        },
+        timeline: {
+            type: "string",
+            description: "Time taken to complete the project",
             required: true,
         },
         role: {
