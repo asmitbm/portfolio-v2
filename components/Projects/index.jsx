@@ -73,10 +73,6 @@ const Projects = () => {
     );
     const ref = useRef(null);
 
-    useEffect(() => {
-        ref.current?.scrollIntoView({ top: -50, behavior: "smooth" });
-    }, [items]);
-
     return (
         <div className={styles.container} ref={ref}>
             <Items currentItems={items} />
