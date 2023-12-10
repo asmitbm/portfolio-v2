@@ -1,0 +1,97 @@
+.background_image {
+    background-image: url("/contact.svg");
+    background-repeat: no-repeat;
+    background-size: 90vw;
+    background-position: 50% 0%;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vw;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    margin-bottom: 4vw;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    margin-bottom: 2vw;
+}
+
+.header_name {
+    display: flex;
+    flex-direction: column;
+}
+
+.header_name h1 {
+    font-size: clamp(3rem, 5vw + 0.9rem, 6rem);
+    font-weight: 600;
+}
+
+.header_para {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 40%;
+}
+
+.header_para p {
+    font-size: clamp(1rem, 1vw + 0.3rem, 2rem);
+    font-weight: 500;
+    padding-bottom: 24px;
+    color: #747474;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2vw;
+}
+
+.contact_card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    width: 100%;
+}
+
+.contact_form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    width: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .header_para {
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+        width: auto;
+    }
+
+    .contact {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .contact_form {
+        width: 100%;
+    }
+}

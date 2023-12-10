@@ -44,6 +44,7 @@ export default function Navbar() {
                             alt="logo"
                             width={70}
                             height={30}
+                            priority={true}
                         />
                     </Link>
                 </div>
