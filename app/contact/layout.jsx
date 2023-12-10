@@ -1,9 +1,9 @@
 import Contact from "./page";
 
 export const metadata = {
-    title: "Projects by Asmit Malakannawar",
+    title: "Contact Asmit Malakannawar",
     description:
-        "See what Asmit has been working on! Explore Asmit's projects and case studies to see the creative solutions that he has crafted.",
+        "Connect with Asmit, feel free to drop a message. Share your thoughts, ask questions, or discuss potential collaborations.",
 };
 
 export default Contact;
