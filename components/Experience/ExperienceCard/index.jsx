@@ -46,6 +46,10 @@ export default function ExperienceCard(props) {
             ref={ref}
             animate={ctrls}
             variants={AnimationUp}
+            whileHover={{
+                scale: 0.96,
+                transition: { duration: 0.3 },
+            }}
             className={styles.container}
         >
             <motion.div
