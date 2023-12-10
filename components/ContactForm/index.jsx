@@ -106,7 +106,10 @@ export default function ContactForm() {
                             }
                         />
                     </div>
-                    <div className={styles.boxes}>
+                    <div
+                        style={{ whiteSpace: "pre-wrap" }}
+                        className={styles.boxes}
+                    >
                         <textarea
                             className={styles.inputs}
                             rows="10"

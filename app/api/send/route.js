@@ -8,14 +8,14 @@ export async function POST(request) {
     try {
         const body = await request.json();
         console.log("body", body);
-        const { email, name, subject } = body;
+        const { email, name, subject, message } = body;
         const data = await resend.emails.send({
             from: "Asmit Malakannawar <no-reply@asmitbm.me>",
             to: email,
             reply_to: "asmitbm2952002@gmail.com",
             cc: "asmitbm2952002@gmail.com",
             subject: subject,
-            react: EmailTemplate({ firstName: name }),
+            react: EmailTemplate({ senderName: name, messageBody: message }),
         });
 
         if (data.status === "success") {
