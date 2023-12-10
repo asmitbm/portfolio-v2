@@ -1,5 +1,6 @@
 "use client";
 import { useEffect } from "react";
+import Link from "next/link";
 import styles from "./styles.module.css";
 import ScrollText from "./ScrollText";
 import AnimatedTitle from "../Animations/AnimatedTitle";
@@ -27,9 +28,37 @@ export default function Header() {
                     </div>
                 </div>
                 <div className={styles.header_para}>
-                    <p>
-                        <AnimatedText content="An open source enthusiast and a product designer. Available for special projects." />
-                    </p>
+                    <div>
+                        <p>
+                            <AnimatedText content="An open source enthusiast and a product designer. Available for special projects." />
+                        </p>
+                    </div>
+                    <div className={styles.resume_project}>
+                        <div>
+                            <p>
+                                <AnimatedText content="Check out my:" />{" "}
+                            </p>
+                        </div>
+                        <div className={styles.resume_project_container}>
+                            <div>
+                                <Link
+                                    target="_blank"
+                                    href="https://docs.google.com/document/d/1dmdJ4ZqvmWkcFJ9zyZdMp-sVhWnGI-as/edit?usp=sharing&ouid=107887382879387273851&rtpof=true&sd=true"
+                                >
+                                    <h5>
+                                        <AnimatedText content="Resume." />
+                                    </h5>
+                                </Link>
+                            </div>
+                            <div>
+                                <Link href="/projects">
+                                    <h5>
+                                        <AnimatedText content="Projects." />
+                                    </h5>
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <ScrollText />
