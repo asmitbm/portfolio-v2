@@ -19,14 +19,14 @@ export const EmailTemplate = ({ senderName, messageBody }) => (
             </div>
             <div>
                 <div>
-                    <h3>👀 Useful Links:</h3>
+                    <h3>Useful Links:</h3>
                 </div>
                 <div>
                     <ul>
                         <li>
                             <a
                                 target="_blank"
-                                href="https://docs.google.com/document/d/1dmdJ4ZqvmWkcFJ9zyZdMp-sVhWnGI-as/edit?usp=drive_link&ouid=107887382879387273851&rtpof=true&sd=true"
+                                href="https://drive.google.com/file/d/19-rRGWFEnTl59xVNoFtS_8MiJKAcT45j/view?usp=sharing"
                             >
                                 Resume
                             </a>

@@ -44,7 +44,7 @@ export default function Header() {
                                 <Link
                                     className={styles.underline_hover}
                                     target="_blank"
-                                    href="https://docs.google.com/document/d/1dmdJ4ZqvmWkcFJ9zyZdMp-sVhWnGI-as/edit?usp=sharing&ouid=107887382879387273851&rtpof=true&sd=true"
+                                    href="https://drive.google.com/file/d/19-rRGWFEnTl59xVNoFtS_8MiJKAcT45j/view?usp=sharing"
                                 >
                                     <h5>
                                         <AnimatedText content="Resume." />
