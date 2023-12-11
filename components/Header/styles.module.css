@@ -59,13 +59,34 @@
     font-size: clamp(1rem, 1vw + 0.3rem, 2rem);
     font-weight: 600;
     color: #747474;
-    padding-bottom: 12px;
+    padding-bottom: 5px;
 }
 
 .header_para p {
     font-size: clamp(1rem, 1vw + 0.3rem, 2rem);
     color: #747474;
     padding-bottom: 5px;
+}
+
+.underline_hover {
+    display: inline-block;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.underline_hover::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: #747474;
+    transition: width 0.25s ease-out;
+}
+
+.underline_hover:hover::before {
+    width: 100%;
 }
 
 @media only screen and (max-width: 900px) {

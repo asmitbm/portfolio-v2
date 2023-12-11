@@ -42,6 +42,7 @@ export default function Header() {
                         <div className={styles.resume_project_container}>
                             <div>
                                 <Link
+                                    className={styles.underline_hover}
                                     target="_blank"
                                     href="https://docs.google.com/document/d/1dmdJ4ZqvmWkcFJ9zyZdMp-sVhWnGI-as/edit?usp=sharing&ouid=107887382879387273851&rtpof=true&sd=true"
                                 >
@@ -51,7 +52,10 @@ export default function Header() {
                                 </Link>
                             </div>
                             <div>
-                                <Link href="/projects">
+                                <Link
+                                    className={styles.underline_hover}
+                                    href="/projects"
+                                >
                                     <h5>
                                         <AnimatedText content="Projects." />
                                     </h5>
