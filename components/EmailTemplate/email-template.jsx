@@ -26,7 +26,7 @@ export const EmailTemplate = ({ senderName, messageBody }) => (
                         <li>
                             <a
                                 target="_blank"
-                                href="https://drive.google.com/file/d/19-rRGWFEnTl59xVNoFtS_8MiJKAcT45j/view?usp=sharing"
+                                href="https://drive.google.com/file/d/18v66Q4m1BurePYoGt6kHTKHdpNTMXVVf/view?usp=drive_link"
                             >
                                 Resume
                             </a>

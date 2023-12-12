@@ -19,14 +19,14 @@ export const projects = [
         link: "https://labs.quansight.org/",
     },
     {
-        title: "Cloud Native Computing Foundation",
-        image: "cncf.svg",
-        link: "https://www.cncf.io/",
-    },
-    {
         title: "AsyncAPI Initiative",
         image: "asyncapi.svg",
         link: "https://www.asyncapi.com/",
+    },
+    {
+        title: "Cloud Native Computing Foundation",
+        image: "cncf.svg",
+        link: "https://www.cncf.io/",
     },
     {
         title: "Weaviate",

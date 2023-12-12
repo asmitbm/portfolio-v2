@@ -1,9 +1,10 @@
 const details = [
     {
-        position: "UX Design Intern",
+        position: "UX Intern",
         work: [
             "Developing prototypes and wireframes for intricate JSON components.",
-            "Conducting user research to explore methods for visually representing JSON Schema documentation, with the aim of enhancing user comprehension and accessibility. ",
+            "Performing user research to refine methods for visually presenting JSON Schema in documentation, aimed at improving user experience and accessibility.",
+            "Collaborating with the founder and lead designer to strategize plans for upcoming releases.",
         ],
         company: "AsyncAPI",
         companyLink: "https://www.asyncapi.com/",
@@ -15,10 +16,9 @@ const details = [
     {
         position: "UI/UX Intern",
         work: [
-            "Designed new UI mockups, and updated the platform.",
-            "Developed and implemented a comprehensive design system from scratch, increasing consistency across the organization.",
-            "Worked on WCAG 2.0 standards to create accessible design and content.",
-            "Engineered and improved frontend primarily using React, Docusaurus.",
+            "Conducted user research, met the needs for 200+ monthly users by developing a website more suited to user needs by increasing responsiveness and optimizing navigation.",
+            "Designed high fidelity working prototypes and implemented a comprehensive design system from scratch, increasing consistency across the organization.",
+            "Created an accessible design system that met Web Content Accessibility Guidelines 2.0 and AAA compliance, by focusing on color contrast, typography, and layouts.",
         ],
         company: "conda-forge",
         companyLink: "https://conda-forge.org/",
@@ -30,8 +30,9 @@ const details = [
     {
         position: "UI/UX Mentor",
         work: [
+            "Pioneered on designing a new web portal and refactoring of the ORAS documentation.",
+            "Led the design initiative throughout the project lifecycle, ensuring a sustained focus on innovative and user-centric solutions.",
             "Collaborated with mentees to learn and enhance their technical skills.",
-            "Pioneered on refactoring of the ORAS documentation and designing a new web portal.",
         ],
         company: "ORAS Project",
         companyLink: "https://oras.land/",
@@ -43,11 +44,10 @@ const details = [
     {
         position: "Visual Design Intern",
         work: [
-            "Redesigned and deployed a webpage dedicated to ORAS CLI.",
-            "Conducted user research studies with maintainers, identifying key pain points and informed product design decisions.",
-            "Researched and applied various UI/UX and accessibility  principles.",
+            "Commenced the work on design system and collaborated on high fidelity prototypes with engineers, and a new design system including typography, and layouts.",
+            "Carried out user research studies with maintainers and users, identifying key pain points and informed product design decisions.",
+            "Integrated aforementioned studies to develop a new consumer website, increasing user interaction by 80%.",
             "Drove an impressive 50% performance improvement and a substantial 70% SEO boost.",
-            "Website tech stack included React, Docusaurus, HTML, CSS, JavaScript.",
         ],
         company: "ORAS Project",
         companyLink: "https://oras.land/",
@@ -59,16 +59,29 @@ const details = [
     {
         position: "Frontend Intern",
         work: [
-            "Revamped design of Faces of GNOME, a community platform to show the contributions made by 1000+ GNOME developers.",
-            "Designed vector graphics by following HIG guidelines.",
+            "Facelifted the design of Faces of GNOME, a community platform to show the contributions made by 1000+ GNOME developers.",
+            "Identified and addressed design-related front-end bugs, renewed vector graphics of all pages.",
             "Leveraged JavaScript and Jekyll for frontend engineering primarily.",
         ],
         company: "GNOME Foundation",
         companyLink: "https://foundation.gnome.org/",
-        time: "06, 2022 - 09, 2022",
-        address: "California (Remote)",
+        time: "06, 2022 - 10, 2022",
+        address: "Germany (Remote)",
         color: "#006D7C",
         bgcolor: "#EFFCFD",
+    },
+    {
+        position: "Technical Writing Intern",
+        work: [
+            "Authored 10+ user guides to help newcomers get started with contributing to Weaviate.",
+            "Facilitated the successful migration from Jekyll to Docusaurus, improving build efficiency by 80% for the organization.",
+        ],
+        company: "Weaviate",
+        companyLink: "https://weaviate.io/",
+        time: "05, 2022 - 12, 2022",
+        address: "Netherlands (Remote)",
+        color: "#00931D",
+        bgcolor: "#ECFFE9",
     },
 ];
 
