@@ -24,7 +24,7 @@
 
 .inputs:focus {
     outline: none !important;
-    border: 3px solid #66b1fc;
+    border: 2px solid #66b1fc;
 }
 
 .name_email {
