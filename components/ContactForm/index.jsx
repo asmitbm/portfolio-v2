@@ -112,7 +112,7 @@ export default function ContactForm() {
                     >
                         <textarea
                             className={styles.inputs}
-                            rows="10"
+                            rows="11"
                             required
                             placeholder="Message * (you will receive a copy of this in your inbox)"
                             value={data.message}

@@ -6,6 +6,7 @@ import ContactForm from "@/components/ContactForm";
 import { ContactCard } from "@/components/ContactCard";
 import AnimatedTitle from "@/components/Animations/AnimatedTitle";
 import AnimatedText from "@/components/Animations/AnimatedText";
+import Image from "next/image";
 import styles from "./page.module.css";
 
 export default function Contact() {
@@ -67,8 +68,16 @@ export default function Contact() {
                     </div>
                 </div>
                 <div className={styles.contact}>
-                    <div className={styles.contact_card}>
-                        <ContactCard />
+                    <div className={styles.contact_image}>
+                        <div className={styles.contact_card}>
+                            <ContactCard />
+                        </div>
+                        <div className={styles.random_image}>
+                            <p>
+                                {" "}
+                                <AnimatedText content="Random images from Unsplash" />
+                            </p>
+                        </div>
                     </div>
                     <div className={styles.contact_form}>
                         <ContactForm />
