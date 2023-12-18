@@ -97,7 +97,7 @@ const AnimatedCard = () => {
                 ></motion.div>
 
                 <div className={styles.base_text}>
-                    <p>Want to work with me?</p>
+                    <p>Do you want to work with me?</p>
                     <Stars />
                 </div>
             </div>
