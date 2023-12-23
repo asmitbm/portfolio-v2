@@ -6,7 +6,6 @@ import { useEffect } from "react";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import AnimatedText from "@/components/Animations/AnimatedText";
-import AnimatedTitle from "../Animations/AnimatedTitle";
 
 export default function Explore() {
     const ctrls = useAnimation();
@@ -65,7 +64,7 @@ export default function Explore() {
                         </div>
                         <div className={styles.figma_text}>
                             <h3>
-                                <AnimatedTitle title="Dive into my collection of Figma assets!" />
+                                <AnimatedText content="Dive into my collection of Figma assets!" />
                             </h3>
                         </div>
                     </Link>
