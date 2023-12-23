@@ -77,7 +77,6 @@ export default function Header() {
                         >
                             <div className={styles.view_buttons}>
                                 <Link
-                                    className={styles.hover_button}
                                     target="_blank"
                                     href="https://drive.google.com/file/d/18v66Q4m1BurePYoGt6kHTKHdpNTMXVVf/view?usp=drive_link"
                                 >
@@ -85,10 +84,7 @@ export default function Header() {
                                 </Link>
                             </div>
                             <div className={styles.view_buttons}>
-                                <Link
-                                    className={styles.hover_button}
-                                    href="/projects"
-                                >
+                                <Link href="/projects">
                                     <h5>Projects.</h5>
                                 </Link>
                             </div>
