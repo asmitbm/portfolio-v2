@@ -57,7 +57,7 @@ function ParallaxText({ children, baseVelocity = 100 }) {
 export default function ScrollText() {
     return (
         <div className={styles.section}>
-            <ParallaxText baseVelocity={-5}>
+            <ParallaxText baseVelocity={-3}>
                 Off the clock, I find joy in graphic and icon design.
             </ParallaxText>
         </div>

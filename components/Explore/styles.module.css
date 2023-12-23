@@ -89,7 +89,7 @@
 
 .info_text_two p {
     color: #000000;
-    font-size: clamp(2rem, 3vw + 0.9rem, 4rem);
+    font-size: clamp(2rem, 2.2vw + 1rem, 4rem);
     font-weight: 600;
 }
 

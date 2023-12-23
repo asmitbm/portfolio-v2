@@ -16,9 +16,16 @@ export default function About() {
         <div className={styles.main}>
             <div className={styles.header_container}>
                 <div className={styles.title}>
-                    <h1>
-                        <AnimatedTitle title="Hello." />
-                    </h1>
+                    <div className={styles.title_hello}>
+                        <h1>
+                            <AnimatedTitle title="Hello :)" />
+                        </h1>
+                    </div>
+                    <div className={styles.title_namaste}>
+                        <h2>
+                            <AnimatedText content="नमस्ते 🙏" />
+                        </h2>
+                    </div>
                 </div>
                 <div className={styles.myphoto}>
                     <Image fill src="/dp.webp" alt="aboutme image" />

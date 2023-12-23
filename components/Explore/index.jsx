@@ -65,7 +65,7 @@ export default function Explore() {
                         </div>
                         <div className={styles.figma_text}>
                             <h3>
-                                <AnimatedTitle title="Check Out My Cool Figma Resources!" />
+                                <AnimatedTitle title="Dive into my collection of Figma assets!" />
                             </h3>
                         </div>
                     </Link>
@@ -83,7 +83,7 @@ export default function Explore() {
                         </div>
                         <div className={styles.info_text_two}>
                             <p>
-                                <AnimatedText content="Explore some more!" />
+                                <AnimatedText content="There's more to explore!" />
                             </p>
                         </div>
                     </Link>

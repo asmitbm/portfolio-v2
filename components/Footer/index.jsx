@@ -26,10 +26,10 @@ export default function Footer() {
                 <div className={styles.section}>
                     <div className={styles.title}>
                         <h1>
-                            <AnimatedTitle title="Let's Work" />
+                            <AnimatedTitle title="Ready to" />
                         </h1>
                         <h1>
-                            <AnimatedTitle title="Together." />
+                            <AnimatedTitle title="Collaborate?" />
                         </h1>
                     </div>
                     <div className={styles.nav}>

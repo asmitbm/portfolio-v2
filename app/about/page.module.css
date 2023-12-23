@@ -20,13 +20,29 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     z-index: 2;
     flex: 1;
 }
 
-.title h1 span {
+.title_hello {
+    display: flex;
+}
+
+.title_hello h1 span {
     font-size: clamp(4rem, 6vw + 0.9rem, 15rem);
     font-weight: 700;
+}
+
+.title_namaste {
+    display: flex;
+    padding-bottom: 15px;
+}
+
+.title_namaste h2 {
+    font-size: clamp(2rem, 2vw + 0.5rem, 8rem);
+    font-weight: 500;
+    font-style: italic;
 }
 
 .myphoto {
@@ -64,7 +80,7 @@
 
 .info_text_content p {
     font-size: clamp(1.5rem, 1.5vw + 0.5rem, 3rem);
-    font-weight: 600;
+    font-weight: 450;
     text-align: justify;
 }
 
