@@ -30,17 +30,35 @@ Contributing is as easy as starting a new workspace:
 
 ### Local Set Up
 
-1. Fork and Clone this repo.
+1. Requires [Node](https://nodejs.org/en/download) version 16.x and above.
 
-2. Open the cloned folder in your IDE.
+2. Fork and Clone this repo.
 
-3. Install dependencies
+    ```sh
+    git clone https://github.com/<YOUR_USERNAME>/portfolio-v2.git
+    ```
+
+3. Open the cloned folder in your IDE.
+
+    ```sh
+    cd portfolio-v2
+    ```
+
+4. Install dependencies
 
     ```sh
     npm install
     ```
 
-4. Start the development server
+5. This portfolio uses the [Resend](https://resend.com/docs/introduction) service to send and receive emails on the [Contact](https://www.asmitbm.me/contact) page. Make sure to read the instructions and obtain your own [API Key](https://resend.com/docs/send-with-nodejs) to run the project successfully.
+
+6. Make a new file called `.env.local`. Copy and paste your API Key as follows:
+
+    ```sh
+    RESEND_API_KEY=xxxxxxxxxxxxxxxxxxxxxxxxxx
+    ```
+
+7. Start the development server
 
     ```sh
     npm run dev
