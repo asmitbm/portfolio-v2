@@ -1,7 +1,7 @@
 .gallery {
     height: 100vw;
-    background-image: url("../../public/marble.webp");
-    background-color: rgb(26, 26, 26);
+    /*background-image: url("../../public/marble.webp");*/
+    background: linear-gradient(to right, #ece9e6, #ffffff);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
