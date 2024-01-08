@@ -78,7 +78,7 @@ export default function Header() {
                             <div className={styles.view_buttons}>
                                 <Link
                                     target="_blank"
-                                    href="https://drive.google.com/file/d/18v66Q4m1BurePYoGt6kHTKHdpNTMXVVf/view?usp=drive_link"
+                                    href="https://drive.google.com/file/d/1oJ5mO_PPHXRAe9DEDO49sa1vSuXjmSts/view?usp=sharing"
                                 >
                                     <h5>Resume.</h5>
                                 </Link>
