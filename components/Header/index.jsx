@@ -92,7 +92,7 @@ export default function Header() {
                     </div>
                 </div>
             </div>
-            <ScrollText />
+            {/*<ScrollText />*/}
             <canvas className={styles.canvas_pointer} id="canvas"></canvas>
         </div>
     );

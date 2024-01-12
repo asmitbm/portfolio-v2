@@ -71,15 +71,9 @@ export default function About() {
                             </h4>
                         </div>
                     </div>
-                    <motion.div
-                        initial="hidden"
-                        ref={ref}
-                        animate={ctrls}
-                        variants={AnimationUp}
-                        className={styles.aboutme_photo}
-                    >
+                    <div className={styles.aboutme_photo}>
                         <Image fill={true} src="/dp.webp" alt="aboutme image" />
-                    </motion.div>
+                    </div>
                 </motion.div>
             </Link>
         </div>

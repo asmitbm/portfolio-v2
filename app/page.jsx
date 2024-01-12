@@ -6,6 +6,7 @@ import About from "@/components/About";
 import InfoResume from "@/components/InfoResume";
 import Skills from "@/components/Skills";
 import Work from "@/components/Work";
+import AdditionalWork from "@/components/AdditionalWork";
 import { motion } from "framer-motion";
 
 export default function Home() {
@@ -40,11 +41,12 @@ export default function Home() {
             className={styles.main}
         >
             <Header />
-            <Gallery />
             <About />
             <InfoResume />
-            <Skills />
             <Work />
+            <Skills />
+            <AdditionalWork />
+            <Gallery />
         </motion.main>
     );
 }

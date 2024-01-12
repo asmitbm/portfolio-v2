@@ -4,7 +4,6 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { height } from "../anim";
 import Body from "./Body";
-import Footer from "./Footer";
 
 const links = [
     {
@@ -47,7 +46,6 @@ export default function Nav() {
                         selectedLink={selectedLink}
                         setSelectedLink={setSelectedLink}
                     />
-                    <Footer />
                 </div>
             </div>
         </motion.div>

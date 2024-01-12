@@ -1,14 +1,12 @@
 "use client";
-import styles from "./styles.module.css";
 import { useEffect } from "react";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import AnimatedText from "../Animations/AnimatedText";
 import Explore from "@/components/Explore";
-import ProjectCard from "./ProjectCard";
-import data from "./data.js";
+import styles from "./styles.module.css";
 
-export default function Work() {
+export default function AdditionalWork() {
     const ctrls = useAnimation();
 
     const { ref, inView } = useInView({
@@ -41,27 +39,21 @@ export default function Work() {
         },
     };
 
-    const ProjectCards = data.projects.map((item, index) => {
-        return (
-            <ProjectCard
-                key={index}
-                title={item.title}
-                src={item.src}
-                description={item.description}
-                period={item.period}
-                link={item.link}
-                color={item.color}
-                bgcolor={item.bgcolor}
-            />
-        );
-    });
-
     return (
-        <motion.div className={styles.work}>
-            <div className={styles.projects_single}>
-                <div>{ProjectCards[0]}</div>
-                <div>{ProjectCards[1]}</div>
-                <div>{ProjectCards[2]}</div>
+        <motion.div
+            className={styles.additional_work}
+            initial="hidden"
+            ref={ref}
+            animate={ctrls}
+            variants={AnimationUp}
+        >
+            <div>
+                <Explore />
+            </div>
+            <div className={styles.graphic_design}>
+                <p>
+                    <AnimatedText content="Off the clock I find joy in graphic and icon design 👇" />
+                </p>
             </div>
         </motion.div>
     );

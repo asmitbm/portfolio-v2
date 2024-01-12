@@ -1,0 +1,23 @@
+.additional_work {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+    margin-top: 1.5vw;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    margin-bottom: 2vw;
+}
+
+.graphic_design {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: clamp(2rem, 3vw + 0.9rem, 4rem);
+    background: #f8f8f8;
+    border-radius: 25px;
+}
+
+.graphic_design p {
+    font-size: clamp(2rem, 1vw + 0.5rem, 3rem);
+    font-weight: 600;
+}
