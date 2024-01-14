@@ -8,13 +8,13 @@ const details = [
         ],
         company: "AsyncAPI",
         companyLink: "https://www.asyncapi.com/",
-        time: "06, 2023 - Present",
+        time: "06, 2023 - 01, 2024",
         address: "Spain (Remote)",
         color: "#540062",
         bgcolor: "#FFEEFD",
     },
     {
-        position: "UI/UX Intern",
+        position: "UX/UI Intern",
         work: [
             "Conducted user research, met the needs for 200+ monthly users by developing a website more suited to user needs by increasing responsiveness and optimizing navigation.",
             "Designed high fidelity working prototypes and implemented a comprehensive design system from scratch, increasing consistency across the organization.",
@@ -28,7 +28,7 @@ const details = [
         bgcolor: "#FDF9EF",
     },
     {
-        position: "UI/UX Mentor",
+        position: "UX/UI Mentor",
         work: [
             "Pioneered on designing a new web portal and refactoring of the ORAS documentation.",
             "Led the design initiative throughout the project lifecycle, ensuring a sustained focus on innovative and user-centric solutions.",

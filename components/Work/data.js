@@ -1,5 +1,14 @@
 const projects = [
     {
+        title: "AsyncAPI DocsUI",
+        src: "/projects/asyncapi.webp",
+        description: "Simplifying JSON Schema Generated Docs",
+        period: "AsyncAPI Internship Project",
+        link: "/projects/asyncapi-docsui",
+        color: "#540062",
+        bgcolor: "#FFEEFD",
+    },
+    {
         title: "Ubuntu with Spatial UI",
         src: "/projects/ubuntuui.webp",
         description: "OS design using Spatial UI",
@@ -16,15 +25,6 @@ const projects = [
         link: "/projects/conda-forge-website-redesign",
         color: "#7C4300",
         bgcolor: "#FFF5DD",
-    },
-    {
-        title: "ORAS Project",
-        src: "/projects/oras.webp",
-        description: "Website design for a CNCF project",
-        period: "Project made during my LFX'23 program",
-        link: "/projects/oras-website",
-        color: "#00397C",
-        bgcolor: "#DCF2FF",
     },
 ];
 
