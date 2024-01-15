@@ -79,7 +79,7 @@ export default function Contact() {
                             </p>
                         </div>
                     </div>
-                    <div className={styles.contact_form}>
+                    <div className={styles.contactform}>
                         <ContactForm />
                     </div>
                 </div>

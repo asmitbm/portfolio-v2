@@ -18,7 +18,7 @@
     inline-size: container;
     grid-column: var(--gc, auto);
     grid-row: var(--gr, auto);
-    padding: 2ch;
+    padding: 2em;
 }
 
 .skills_grid > * h3 {
