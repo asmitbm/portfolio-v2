@@ -1,113 +1,10 @@
 "use client";
 import styles from "./styles.module.css";
-import { useRef, useState } from "react";
-import Link from "next/link";
 import Image from "next/image";
 import { useEffect } from "react";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import AnimatedText from "@/components/Animations/AnimatedText";
-
-const SkillsLogos = [
-    {
-        title: "Figma",
-        src: "figma.svg",
-        link: "https://www.figma.com/",
-    },
-    {
-        title: "Framer",
-        src: "framer.svg",
-        link: "https://www.framer.com/",
-    },
-    {
-        title: "Canva",
-        src: "canva.svg",
-        link: "https://www.canva.com/",
-    },
-    {
-        title: "Adobe Illustrator",
-        src: "ai.svg",
-        link: "https://www.adobe.com/in/products/illustrator.html",
-    },
-    {
-        title: "JavaScript",
-        src: "javascript.svg",
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-    },
-    {
-        title: "Next.js",
-        src: "nextjs.svg",
-        link: "https://nextjs.org/",
-    },
-    {
-        title: "Webflow",
-        src: "webflow.svg",
-        link: "https://webflow.com",
-    },
-    {
-        title: "Tailwind CSS",
-        src: "tailwindcss.svg",
-        link: "https://tailwindcss.com/",
-    },
-    {
-        title: "CSS",
-        src: "css.svg",
-        link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
-    },
-];
-
-function Logo({ title, src, link }) {
-    return (
-        <div className={styles.container}>
-            <Link href={link}>
-                <Image
-                    src={`/skills/${src}`}
-                    alt={title}
-                    title={title}
-                    role="img"
-                    fill
-                />
-            </Link>
-        </div>
-    );
-}
-
-function LogoAnimation({ children }) {
-    const ref = useRef(null);
-    const [position, setPosition] = useState({ x: 0, y: 0 });
-
-    const handleMouse = (e) => {
-        const { clientX, clientY } = e;
-        const { height, width, left, top } =
-            ref.current.getBoundingClientRect();
-        const middleX = clientX - (left + width / 2);
-        const middleY = clientY - (top + height / 2);
-        setPosition({ x: middleX, y: middleY });
-    };
-
-    const reset = () => {
-        setPosition({ x: 0, y: 0 });
-    };
-
-    const { x, y } = position;
-    return (
-        <motion.div
-            style={{ position: "relative" }}
-            ref={ref}
-            onMouseMove={handleMouse}
-            onMouseLeave={reset}
-            animate={{ x, y }}
-            transition={{
-                type: "spring",
-                stiffness: 150,
-                damping: 15,
-                mass: 0.1,
-            }}
-        >
-            {children}
-        </motion.div>
-    );
-}
 
 export default function Skills() {
     const ctrls = useAnimation();
@@ -143,34 +40,86 @@ export default function Skills() {
     };
 
     return (
-        <motion.div
-            initial="hidden"
-            ref={ref}
-            animate={ctrls}
-            variants={AnimationUp}
-            className={styles.skills}
-        >
-            <div className={styles.skills_text}>
-                <div className={styles.skills_text_one}>
+        <div className={styles.main}>
+            <motion.div
+                initial="hidden"
+                ref={ref}
+                animate={ctrls}
+                variants={AnimationUp}
+                className={styles.skills_grid}
+            >
+                <div className={styles.title}>
                     <p>
-                        <AnimatedText content="Tools and Technologies" />
+                        <AnimatedText content="Design + Tech" />
                     </p>
                 </div>
-                <div className={styles.skills_text_two}>
+
+                <div className={styles.design_prototyping}>
+                    <div className={styles.container}>
+                        <Image
+                            src="/skills/prototyping.svg"
+                            alt=""
+                            role="img"
+                            fill
+                        />
+                    </div>
+
+                    <h3>
+                        <AnimatedText content="Design Prototyping" />
+                    </h3>
                     <p>
-                        <AnimatedText content="I am familiar with" />
+                        <AnimatedText content="Figma, Excalidraw, Balsamiq, Framer, Adobe Creative Suite, ChatGPT" />
                     </p>
                 </div>
-            </div>
-            <div className={styles.skills_logos}>
-                <div className={styles.logos_container}>
-                    {SkillsLogos.map((props, idx) => (
-                        <LogoAnimation key={idx}>
-                            <Logo key={idx} {...props} />
-                        </LogoAnimation>
-                    ))}
+
+                <div className={styles.design_skills}>
+                    <div className={styles.container}>
+                        <Image
+                            src="/skills/design.svg"
+                            alt=""
+                            role="img"
+                            fill
+                        />
+                    </div>
+
+                    <h3>
+                        <AnimatedText content="Design Skills" />
+                    </h3>
+                    <p>
+                        <AnimatedText content="Wireframing, Accessibility, Icon Design, Design Systems, Prototyping, Interaction Design, Visual Design" />
+                    </p>
                 </div>
-            </div>
-        </motion.div>
+
+                <div className={styles.user_research}>
+                    <div className={styles.container}>
+                        <Image src="/skills/user.svg" alt="" role="img" fill />
+                    </div>
+                    <h3>
+                        <AnimatedText content="User Research" />
+                    </h3>
+                    <p>
+                        <AnimatedText content="A/B Testing, Focus Groups, Usability Testing, Generative Research, Heuristic Analysis, Survey Development" />
+                    </p>
+                </div>
+
+                <div className={styles.frontend}>
+                    <div className={styles.container}>
+                        <Image
+                            src="/skills/frontend.svg"
+                            alt=""
+                            role="img"
+                            fill
+                        />
+                    </div>
+
+                    <h3>
+                        <AnimatedText content="Front-End Development" />
+                    </h3>
+                    <p>
+                        <AnimatedText content="JavaScript, HTML, Tailwind CSS, React.js, Material UI, Bootstrap" />
+                    </p>
+                </div>
+            </motion.div>
+        </div>
     );
 }

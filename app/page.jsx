@@ -43,8 +43,8 @@ export default function Home() {
             <Header />
             <About />
             <InfoResume />
-            <Work />
             <Skills />
+            <Work />
             <AdditionalWork />
             <Gallery />
         </motion.main>
