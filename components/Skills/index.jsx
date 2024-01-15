@@ -98,7 +98,7 @@ export default function Skills() {
                         <AnimatedText content="User Research" />
                     </h3>
                     <p>
-                        <AnimatedText content="A/B Testing, Focus Groups, Usability Testing, Generative Research, Heuristic Analysis, Survey Development" />
+                        <AnimatedText content="A/B Testing, Focus Groups, Usability Testing, User Personas, Heuristic Analysis, Survey Development" />
                     </p>
                 </div>
 
