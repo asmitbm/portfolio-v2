@@ -12,9 +12,7 @@
 }
 
 .skills_grid > * {
-    background: var(--bg, #eee);
     border-radius: 25px;
-    color: #000000;
     inline-size: container;
     grid-column: var(--gc, auto);
     grid-row: var(--gr, auto);
@@ -46,7 +44,7 @@
 }
 
 .title {
-    background-color: #222222;
+    background-color: #383838;
     font-size: 1.5em;
     text-align: center;
 }
