@@ -23,8 +23,8 @@ const projects = [
         description: "Website redesign focusing on accessibility",
         period: "Project made during my GSoC'23 program",
         link: "/projects/conda-forge-website-redesign",
-        color: "#7C4300",
-        bgcolor: "#FFF5DD",
+        color: "#00695C",
+        bgcolor: "#D2FFFB",
     },
 ];
 

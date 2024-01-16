@@ -24,8 +24,8 @@ const details = [
         companyLink: "https://conda-forge.org/",
         time: "05, 2023 - 09, 2023",
         address: "Germany (Remote)",
-        color: "#7C4300",
-        bgcolor: "#FDF9EF",
+        color: "#00695C",
+        bgcolor: "#D2FFFB",
     },
     {
         position: "UX/UI Mentor",
@@ -38,8 +38,8 @@ const details = [
         companyLink: "https://oras.land/",
         time: "05, 2023 - 08, 2023",
         address: "California (Remote)",
-        color: "#196200",
-        bgcolor: "#EEFFF5",
+        color: "#7C4300",
+        bgcolor: "#FDF9EF",
     },
     {
         position: "Visual Design Intern",
