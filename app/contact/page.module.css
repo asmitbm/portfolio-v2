@@ -69,7 +69,7 @@
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    height: 21.5vh;
+    height: 100%;
     border-radius: 25px;
     position: relative;
 }
@@ -112,6 +112,10 @@
     .contact {
         grid-template-columns: repeat(1, 1fr);
         align-items: center;
+    }
+
+    .random_image {
+        height: 15vh;
     }
 }
 
