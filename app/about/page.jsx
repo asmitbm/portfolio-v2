@@ -50,7 +50,7 @@ export default function About() {
             <div className={styles.activities}>
                 <div className={styles.activities_content}>
                     <h1>
-                        <AnimatedTitle title="I love attending conferences, meeting people, travelling and photography!" />
+                        <AnimatedText content="I love attending conferences, meeting people, travelling and photography!" />
                     </h1>
                 </div>
                 <div className={styles.sliding_images}>
