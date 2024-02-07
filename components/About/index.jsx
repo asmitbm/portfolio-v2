@@ -45,7 +45,6 @@ export default function About() {
             <Link href="/about">
                 <motion.div
                     whileHover={{ scale: 0.95, transition: { duration: 0.3 } }}
-                    whileTap={{ scale: 1.0 }}
                     initial="hidden"
                     ref={ref}
                     animate={ctrls}

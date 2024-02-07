@@ -62,7 +62,6 @@ export default function InfoResume() {
             </div>
             <motion.div
                 whileHover={{ scale: 0.95, transition: { duration: 0.3 } }}
-                whileTap={{ scale: 1.0 }}
                 className={styles.resume}
             >
                 <Link

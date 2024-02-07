@@ -51,7 +51,6 @@ export default function Explore() {
             >
                 <motion.div
                     whileHover={{ scale: 0.95, transition: { duration: 0.3 } }}
-                    whileTap={{ scale: 1.0 }}
                     className={styles.figma}
                 >
                     <Link
@@ -71,7 +70,6 @@ export default function Explore() {
                 </motion.div>
                 <motion.div
                     whileHover={{ scale: 0.95, transition: { duration: 0.3 } }}
-                    whileTap={{ scale: 1.0 }}
                     className={styles.info_text}
                 >
                     <Link href="/projects">

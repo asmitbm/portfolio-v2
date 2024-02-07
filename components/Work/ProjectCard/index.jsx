@@ -51,7 +51,6 @@ export default function ProjectCard(props) {
                 scale: 0.95,
                 transition: { duration: 0.3 },
             }}
-            whileTap={{ scale: 1.0 }}
             className={styles.container}
         >
             <Link

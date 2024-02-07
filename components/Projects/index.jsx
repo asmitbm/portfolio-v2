@@ -26,7 +26,6 @@ const Items = ({ currentItems }) => {
                                 scale: 0.95,
                                 transition: { duration: 0.3 },
                             }}
-                            whileTap={{ scale: 1.0 }}
                             viewport={{ once: true }}
                             key={index}
                             style={{ backgroundColor: `${project.bgcolor}` }}
