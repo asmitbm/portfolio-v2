@@ -1,10 +1,19 @@
 const projects = [
     {
-        title: "AsyncAPI DocsUI",
+        title: "SwipeRead",
+        src: "/projects/swiperead.webp",
+        description: "On-the-Go Reading Experience",
+        period: "UX Case Study",
+        link: "/projects/swiperead-news-app",
+        color: "#833F00",
+        bgcolor: "#FFF4DB",
+    },
+    {
+        title: "AsyncAPI Docs UX",
         src: "/projects/asyncapi.webp",
         description: "Simplifying JSON Schema Generated Docs",
         period: "AsyncAPI Internship Project",
-        link: "/projects/asyncapi-docsui",
+        link: "/projects/asyncapi-docsux",
         color: "#540062",
         bgcolor: "#FFEEFD",
     },
@@ -16,15 +25,6 @@ const projects = [
         link: "/projects/ubuntu-spatial-ui-design",
         color: "#7C2D00",
         bgcolor: "#FFEBDC",
-    },
-    {
-        title: "conda-forge",
-        src: "/projects/condaforge.webp",
-        description: "Website redesign focusing on accessibility",
-        period: "Project made during my GSoC'23 program",
-        link: "/projects/conda-forge-website-redesign",
-        color: "#00695C",
-        bgcolor: "#D2FFFB",
     },
 ];
 
