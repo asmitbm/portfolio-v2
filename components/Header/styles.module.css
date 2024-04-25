@@ -52,6 +52,10 @@
     margin-bottom: 10px;
 }
 
+.para a {
+    font-weight: 600;
+}
+
 .resume_project {
     display: flex;
     flex-direction: row;

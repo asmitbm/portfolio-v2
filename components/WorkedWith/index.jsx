@@ -9,6 +9,11 @@ import styles from "./styles.module.css";
 
 export const projects = [
     {
+        title: "Biorce",
+        image: "biorce.svg",
+        link: "https://www.biorce.com/",
+    },
+    {
         title: "GNOME Foundation",
         image: "gnome.svg",
         link: "https://foundation.gnome.org/",

@@ -65,6 +65,9 @@ export default function Header() {
                     <div className={styles.para}>
                         <p>
                             <AnimatedText content="A product designer and an open source enthusiast." />
+                            <br />
+                            <AnimatedText content="Currently UX/UI Designer" />
+                            <Link href="https://www.biorce.com/">@Biorce</Link>
                         </p>
                     </div>
                     <div className={styles.resume_project}>
