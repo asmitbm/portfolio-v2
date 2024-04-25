@@ -1,5 +1,15 @@
 const details = [
     {
+        position: "UX/UI Designer",
+        work: [""],
+        company: "Biorce",
+        companyLink: "https://www.biorce.com/",
+        time: "03, 2024 - Present",
+        address: "Spain (Remote)",
+        color: "#001A4F",
+        bgcolor: "#E1FBFF",
+    },
+    {
         position: "UX Intern",
         work: [
             "Developing prototypes and wireframes for intricate JSON components.",
@@ -8,7 +18,7 @@ const details = [
         ],
         company: "AsyncAPI",
         companyLink: "https://www.asyncapi.com/",
-        time: "06, 2023 - 01, 2024",
+        time: "06, 2023 - 02, 2024",
         address: "Spain (Remote)",
         color: "#540062",
         bgcolor: "#FFEEFD",
