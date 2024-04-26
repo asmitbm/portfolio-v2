@@ -66,7 +66,7 @@ export default function Header() {
                         <p>
                             <AnimatedText content="A product designer and an open source enthusiast." />
                             <br />
-                            <AnimatedText content="Currently UX/UI Designer" />
+                            <AnimatedText content="Currently working" />
                             <Link href="https://www.biorce.com/">@Biorce</Link>
                         </p>
                     </div>
