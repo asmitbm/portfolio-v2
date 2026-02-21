@@ -81,7 +81,7 @@ export default function Header() {
                             <div className={styles.view_buttons}>
                                 <Link
                                     target="_blank"
-                                    href="https://drive.google.com/file/d/11tmWw0Fetv_ick1xp--swpGFsiuVck1-/view?usp=sharing"
+                                    href="https://drive.google.com/file/d/1mfqYvoWxRkHfhARhfvmgJZF5ctHuA61P/view?usp=sharing"
                                 >
                                     <h5>Resume.</h5>
                                 </Link>
@@ -100,3 +100,4 @@ export default function Header() {
         </div>
     );
 }
+
